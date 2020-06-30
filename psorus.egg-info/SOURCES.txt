@@ -1,6 +1,8 @@
 README.md
 setup.py
 grapa/__init__.py
+grapa/constants.py
+grapa/functionals.py
 psorus.egg-info/PKG-INFO
 psorus.egg-info/SOURCES.txt
 psorus.egg-info/dependency_links.txt
