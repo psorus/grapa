@@ -1,0 +1,7 @@
+README.md
+setup.py
+grapa/__init__.py
+psorus.egg-info/PKG-INFO
+psorus.egg-info/SOURCES.txt
+psorus.egg-info/dependency_links.txt
+psorus.egg-info/top_level.txt
