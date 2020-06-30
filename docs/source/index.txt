@@ -1,0 +1,21 @@
+Grapa: Graph Autoencoder made easy!
+=================================
+
+A simple python3 library using keras and tensorflow to do Deep Learning on Graphs, with a strong emphasis on Codes that chance the Shape of the Graph in a way that can be used for Autoencoder
+
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   samplefile
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
