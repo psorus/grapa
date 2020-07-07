@@ -1,0 +1,17 @@
+gaddbias
+========
+
+Takes a Feature Vector and adds a bias to it
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node
+
+* **metrik_init="glorot_uniform"**: initializer of the bias
+
+* **learnabel=True**: Shall the Bias be learnable
+
+
+

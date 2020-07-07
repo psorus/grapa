@@ -1,0 +1,11 @@
+gadd1
+=====
+
+Takes a Adjacency Matrix and adds an Identity to it
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+
+

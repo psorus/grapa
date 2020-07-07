@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>This should be the title &mdash; Grapa 0.1 documentation</title>
+    <title>gcomdensediverge &mdash; Grapa 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Grapa 0.1 documentation" href="index.html" />
-    <link rel="prev" title="Grapa: Graph Autoencoder made easy!" href="index.html" /> 
+    <link rel="prev" title="gchooseparam" href="gchooseparam.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,7 +36,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="index.html" title="Grapa: Graph Autoencoder made easy!"
+          <a href="gchooseparam.html" title="gchooseparam"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -47,14 +47,18 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="this-should-be-the-title">
-<h1>This should be the title<a class="headerlink" href="#this-should-be-the-title" title="Permalink to this headline">¶</a></h1>
-<p>and this is some information regarding something written in rst</p>
-<p>Will be used for something and something will be used</p>
+  <div class="section" id="gcomdensediverge">
+<h1>gcomdensediverge<a class="headerlink" href="#gcomdensediverge" title="Permalink to this headline">¶</a></h1>
+<p>Inputs a 3d Vector of dimensions (-1,gs,param) and uses a simple dense Layer to transform it into (-1,gs,c,paramo) without breaking Graph Permutation Symmetry.
+So transforms each Feature Vector into a set of c Feature Vectors.</p>
 <p>Arguments</p>
 <ul class="simple">
-<li><strong>q</strong>: just some random constant</li>
-<li><strong>p</strong>: another constant</li>
+<li><strong>gs</strong>: The Number of Nodes of the Graph (Graph Size)</li>
+<li><strong>param</strong>: The Number of Features for each node</li>
+<li><strong>paramo</strong>: The Number of Features each Outputvector should have</li>
+<li><strong>c=2</strong>: The Number of Outputvectors for each Inputfeaturevector</li>
+<li><strong>initializer=glorot_uniform</strong>: THe Transformation initializer</li>
+<li><strong>learnabel=True</strong>: Shall the Transformation be learnable</li>
 </ul>
 </div>
 
@@ -65,11 +69,11 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Grapa: Graph Autoencoder made easy!</a></p>
+  <p class="topless"><a href="gchooseparam.html"
+                        title="previous chapter">gchooseparam</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/samplefile.txt"
+    <li><a href="_sources/gcomdensediverge.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -96,7 +100,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="index.html" title="Grapa: Graph Autoencoder made easy!"
+          <a href="gchooseparam.html" title="gchooseparam"
              >previous</a> |</li>
         <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>

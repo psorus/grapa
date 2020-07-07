@@ -1,0 +1,15 @@
+gbuilder
+========
+
+Simple Graph Construction Algorithm. Probably not very useful, uses the 5th and 6th Feature (4/5 if counting from 0). Also concattes the Adjacency Matrix with the Feature Vector and does not set the Graph to TopK, but each weigth to the negative exponential. Could probably more useful, if you modify getmetrik and fromdistsq. Like gtopk can also add free new parameters
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node
+
+* **free**: Number of new free Features for each node
+
+
+

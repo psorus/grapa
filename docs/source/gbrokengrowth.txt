@@ -1,0 +1,15 @@
+gbrokengrowth
+=============
+
+Easy way to increase the number of nodes in a Feature Vector. Uses a single Dense Layer to transform every Feature in those that are new. Breaks the Graph Permutation Symmetry.
+
+Arguments
+
+* **inn**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **out**: The final Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node
+
+
+

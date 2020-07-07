@@ -1,0 +1,15 @@
+gchooseparam
+============
+
+Transforms a Feature Vector into one with just q elements
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node
+
+* **q=[0,3]**: which features to keep
+
+
+

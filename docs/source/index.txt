@@ -11,6 +11,15 @@ Contents:
 
    samplefile
 
+   gadd1
+   gaddbias
+   gaddzeros
+   gbrokengrowth
+   gbuilder
+   gchooseparam
+   gcomdensediverge
+   
+
 
 Indices and tables
 ==================

@@ -1,0 +1,15 @@
+gaddzeros
+=========
+
+Takes a Feature Vector and creates some empty (zero) nodes
+
+Arguments
+
+* **inn**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **out**: The output Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node
+
+
+
