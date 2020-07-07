@@ -1,0 +1,21 @@
+gcomdensemerge
+==============
+
+Takes a 4d Tensor (-1,gs,ags,param) and transforms it using a simple Dense Layer into a 3d one (-1,gs,paramo). Respects Graph permutation Symmetry. So Basically Transforms each set of vectors into one vector of different size
+
+Arguments
+
+* **gs**: The Number of Lists of Feature Vectors and the Number of Nodes in the Output
+
+* **ags**: The Number of Vectors in each List of Input vector, could be understood as the opposite of c
+
+* **param**: The Number of Features for each Input Node
+
+* **paramo**: The Number of Features each Outputvector should have
+
+* **initializer=glorot_uniform**: The Transformation initializer
+
+* **learnabel=True**: Shall the Transformation be learnable
+
+
+

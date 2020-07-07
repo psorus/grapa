@@ -1,0 +1,13 @@
+gcomdiagraph
+============
+
+Takes a Adjacency Matrix of Size (-1,gs,gs) and cuts out the diagonal Parts of it, here each diagonal entry has size (c,c), so that the result has the shape (-1,gs/c,c,c).
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size). Has to be a multiple of c
+
+* **c**: The Number of Nodes in each subgraph
+
+
+

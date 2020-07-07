@@ -1,0 +1,13 @@
+gcomdex
+=======
+
+Takes a Feature Vector and returns the Indices of this Feautre Vector in the node dimension in the Order of the last Feature (desc). Returned Integers are cast to float32 to keep the numeric types consistent.
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node
+
+
+

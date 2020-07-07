@@ -1,0 +1,21 @@
+gcomdepool
+==========
+
+Transforms a 3d Vector (-1,gs,param) into a 4d vector (-1,gs,c,paramo) using a Dense Layer. It respects Graph Permutation Symmetry by simply transforming each Feauture Vector into a List of c Feature Vectors
+
+Arguments
+
+* **gs**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **param**: The initial Number of Features for each node
+
+* **paramo**: The Number of Features each Outputvector should have
+
+* **c=2**: The Factor by which to increase gs
+
+* **metrik_init=glorot_uniform**: The Transformation initializer to go from little Feature Vector to output Vectors
+
+* **learnable=True**: Shall the Transformation be learnable
+
+
+

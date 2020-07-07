@@ -18,7 +18,16 @@ Contents:
    gbuilder
    gchooseparam
    gcomdensediverge
-   
+   gcomdensemerge
+   gcomdepoollg
+   gcomdepoolplus   
+   gcomdepool
+   gcomdex
+   gcomdiagraph
+   gcomextractdiag
+   gcomfullyconnected
+
+
 
 
 Indices and tables

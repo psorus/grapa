@@ -1,0 +1,13 @@
+gcomextractdiag
+===============
+
+Takes a 5 dimensional Tensor of size (-1,gs,gs,c,c) and transforms it into a 4d Tensor of size (-1,gs,c,c) by demanding that the second and third index are the same (A_ijklm into A_ijjlm)
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size).
+
+* **c**: The Number of Nodes in each subgraph
+
+
+

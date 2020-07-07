@@ -1,0 +1,13 @@
+gcomfullyconnected
+==================
+
+Creates a fully connected Graph of size (-1,gs,gs) (so basically just a 1). Uses a Feature vector to find the size of the first dimension
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size).
+
+* **param**: The Number of Features in each Node. Here only used for consistency checks
+
+
+
