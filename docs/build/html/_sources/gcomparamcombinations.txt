@@ -1,0 +1,13 @@
+gcomparamcombinations
+=====================
+
+Takes a 3d Vector (-1,gs,param) and returns each possible Combination in gs (-1,gs,gs,param,2)
+
+Arguments
+
+* **gs**: The Number of Nodes in each Graph.
+
+* **param**: The Number of Features in each Node.
+
+
+

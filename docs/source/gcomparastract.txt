@@ -1,0 +1,15 @@
+gcomparastract
+==============
+
+Cuts a Feature Vector of size (-1,gs,param) into (gs/c)*c Feature Vectors (-1,gs/c,c,param)
+
+Arguments
+
+* **gs**: The initial Number of Nodes in each Graph.
+
+* **c**: The Size (Number of Nodes) of the Feature Vectors that will be cut out of the Input.
+
+* **param**: The Number of Features in each Node.
+
+
+

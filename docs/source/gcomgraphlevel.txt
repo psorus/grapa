@@ -1,0 +1,12 @@
+gcomgraphlevel
+==============
+
+Converts a 5d Tensor of size (-1,gs,gs,c,c) into (-1,c*gs,c*gs)
+
+Arguments
+
+* **gs**: The Number of Nodes in each global Graph.
+
+* **c=2**: The Number of Nodes in each subgraph.
+
+

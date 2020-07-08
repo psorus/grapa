@@ -1,0 +1,15 @@
+gcomparamlevel
+==============
+
+Takes a 4 Tensor of size(-1,gs,c,param) and levels it down into (-1,c*gs,param)
+
+Arguments
+
+* **gs**: The Number of Nodes in each global Graph.
+
+* **c**: The Number of Nodes in each subgraph.
+
+* **param**: The Number of Features in each Node.
+
+
+

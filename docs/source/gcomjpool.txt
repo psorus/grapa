@@ -1,0 +1,21 @@
+gcomjpool
+=========
+
+Takes a Feature Vector of size (-1,gs,param) and some indices representing order indices (-1,gs) and uses these indices to reorders the Feature Vectors and applies a simple Dense Transformation to transform it into (-1,gs/c,paramo)
+
+Arguments
+
+* **gs**: The initial Number of Nodes in each Graph.
+
+* **param**: The initial Number of Features.
+
+* **c=2**: How many Feature Vectors to combine into each Outputvector. gs has to divide this
+
+* **paramo**: The Number of Features in each Outputvector
+
+* **metrik_init="glorot_uniform"**: The initializer of the Transformation
+
+* **trainable=True**: weather the Transformation is trainable
+
+
+

@@ -1,0 +1,25 @@
+gcomgpool
+=========
+
+Takes an Adjacency Matrix and a Feature Vector, orders the Feature Vector by its last Feature and the Adjacency Matrix in the same way. Then uses a learnable Transformation to go from each neighbouring c vectors of size param into one vector of size paramo. and uses mode to go from a big adjacency Matrix of size gs to one of size gs, after which it roundes the resulting Adjacency Matrix to either 0 or 1 and returns both the new Adjacency Matrix and the new Feature Vector. Basically a simpler (and not used by me) version of the function abstr
+
+Arguments
+
+* **gs**: The initial Number of Nodes of the Graph (Graph Size).
+
+* **param**: The initial Number of Features in each Node.
+
+* **paramo**: The resulting Number of Features in each Node.
+
+* **metrik_init="glorot_uniform"**: The initializer of the Feautre Vector tranformation
+
+* **learnable=True**: weather the Transformation is learnable
+
+* **mode="mean"**: Either "mean", "max" or "min", The Transformation to go combine each subgraph into a single node
+
+* **cut=0.5**: Where to round the graph after the mode transformation, Each Value above cut will be set to 1 and each value below to 0, each Value that is equal to cut will be also set to 1
+
+* **c_const=1000**: Since the Rounding is implementet using relus (relu(1+c_const*(X-cut))-relu(c_const*(X-cut))) , you require a numerical constant to decide how fast the rounding function goes from 0 to 1. This could be set higher, but this could result in diverging gradients.
+
+
+

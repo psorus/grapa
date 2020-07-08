@@ -1,0 +1,12 @@
+gcomgraphlevel
+==============
+
+Converts a 3d Tensor (-1,gs,gs) into (-1,c*gs,c*gs) by repetition
+
+Arguments
+
+* **gs**: The Number of Nodes in each Graph.
+
+* **c=2**: The Number of repetition this Layer should do.
+
+

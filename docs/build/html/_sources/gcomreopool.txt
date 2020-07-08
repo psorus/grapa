@@ -1,0 +1,13 @@
+gcomreopool
+===========
+
+Takes an Adjacency Matrix and a Feature Vector and orders them by the last Feauture Index
+
+Arguments
+
+* **gs**: The Number of Nodes in each Graph.
+
+* **param**: The Number of Features in each Node.
+
+
+

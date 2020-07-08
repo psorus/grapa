@@ -29,7 +29,7 @@ class gcomgraphfrom2param(Layer):#shall take a 5d layer (?,gs,gs,param,n=2) and 
 
     self.trafo=self.add_weight(name="trafo",
                                shape=(self.param*self.n,self.c*self.c),
-                               initializer=self.initializer,
+                               =self.initializer,
                                trainable=self.trainable)
 
 

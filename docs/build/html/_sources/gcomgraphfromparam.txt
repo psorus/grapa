@@ -1,0 +1,19 @@
+gcomgraphfromparam
+==================
+
+similar to gcomgraphfrom2param but for a 3d Tensor instead of a 5d Tensor ((-1,gs,param) to (-1,gs,c,c))
+
+Arguments
+
+* **gs**: The Number of Nodes in each global Graph.
+
+* **param**: The Number of Features from which the graphs will be constructed
+
+* **c=2**: The Number of Nodes in each resulting subgraph.
+
+* **initializer="glorot_uniform"**: The initializer of the Transformation
+
+* **trainable=True**: weather the Transformation is trainable
+
+
+

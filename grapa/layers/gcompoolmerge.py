@@ -30,6 +30,23 @@ class gcompoolmerge(Layer):
     #                           initializer=self.initializer,
     #                           trainable=self.trainable)
 
+(self,x,c_const=1000.0,cut=0.5):
+  return K.relu(c_const*(x-cut)+1)-K.relu(c_const*(x-c_const))
+def doand(x,mode="prod",c_const=1000.0,cut=0.5):
+
+
+  if mode=="and":
+    ret=R(K.prod(x,axis=-1),c_const=c_const,cut=cut)
+  if mode=="prod":
+    ret=K.prod(x,axis=-1)
+  if mode=="or":
+    ret=R(K.sum(x,axis=-1),c_const=c_const,cut=cut)
+  if mode=="sum":
+    ret=K.sum(x,axis=-1)
+
+
+  return ret
+
 
     self.built=True
 

@@ -1,0 +1,19 @@
+gcomgraphcutter
+===============
+
+Takes a Adjacency Matrix of size gs, cuts it into c subgraphs, and uses mode Transformation to combine those c subgraphs and rounded the Grahs afterwards.
+
+Arguments
+
+* **gs**: The initial Number of Nodes in the Graph.
+
+* **c=2**: The Number of subgraphs, must gs must divide it.
+
+* **mode**: either "mean","min" or "max". The kind of Transformation that combines the Graphs.
+
+* **cut=0.5**: Where to round the graph after the mode transformation, Each Value above cut will be set to 1 and each value below to 0, each Value that is equal to cut will be also set to 1
+
+* **c_const=1000**: Since the Rounding is implementet using relus (relu(1+c_const*(X-cut))-relu(c_const*(X-cut))) , you require a numerical constant to decide how fast the rounding function goes from 0 to 1. This could be set higher, but this could result in diverging gradients.
+
+
+

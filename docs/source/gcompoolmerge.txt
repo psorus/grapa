@@ -1,0 +1,17 @@
+gcompoolmerge
+=============
+
+Takes a 4d vector of size (-1,gs,ags,param) and uses mode to transform it into (-1,gs,param)
+
+Arguments
+
+* **gs**: The Number of Nodes in each Graph.
+
+* **ags**: The Number of Nodes in each subgraph.
+
+* **mode="max"**: The Transformation that will be used, has to be either "max", "min" or "mean"
+
+* **param**: The Number of Features in each Node.
+
+
+

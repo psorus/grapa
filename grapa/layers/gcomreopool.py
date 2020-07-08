@@ -14,7 +14,7 @@ from tensorflow.linalg import trace
 
 
 class gcomreopool(Layer):
-  def __init__(self,gs=20,param=40,paramo=40,**kwargs):
+  def __init__(self,gs=20,param=40,**kwargs):
     #c=2
     #mode="min"
     self.gs=gs

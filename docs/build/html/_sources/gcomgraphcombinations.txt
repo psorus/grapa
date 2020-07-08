@@ -1,0 +1,11 @@
+gcomgraphcombinations
+=====================
+
+Takes a 4d Layer os size (-1,gs,c,c) and concattes every possible combination in the first nonbatch dimension (-1,gs,gs,c,c,2)
+
+Arguments
+
+* **gs**: The size of the combination dimensions.
+
+* **c**: The size of each subgraph
+

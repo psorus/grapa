@@ -26,6 +26,24 @@ Contents:
    gcomdiagraph
    gcomextractdiag
    gcomfullyconnected
+   gcomgpool
+   gcomgraphand2
+   gcomgraphand
+   gcomgraphcombinations
+   gcomgraphcutter
+   gcomgraphfrom2param
+   gcomgraphfromparam
+   gcomgraphlevel
+   gcomgraphrepeat
+   gcomjpool
+   gcomparamcombinations
+   gcomparamlevel
+   gcomparastract   
+   gcompoolmerge
+   gcompool
+   gcomreopool
+
+
 
 
 

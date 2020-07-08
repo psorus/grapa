@@ -1,0 +1,21 @@
+gcomgraphfrom2param
+===================
+
+Takes a 5d Tensor of size (-1,gs,gs,param,n) and transforms it into (-1,gs,gs,c,c). So basically creates a Graph of size c for each set of n param vectors, using a simple Dense Layer to do the (param,n) to (c,c) transformation.
+
+Arguments
+
+* **gs**: The Number of Nodes in each global Graph.
+
+* **param**: The Number of Features from which the graphs will be constructed
+
+* **c=2**: The Number of Nodes in each resulting subgraph.
+
+* **n=2**: The Number of Feature Vectors that result in each subgraph
+
+* **initializer="glorot_uniform"**: The initializer of the Transformation
+
+* **trainable=True**: weather the Transformation is trainable
+
+
+

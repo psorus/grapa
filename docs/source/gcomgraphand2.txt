@@ -1,0 +1,17 @@
+gcomgraphand2
+=============
+
+Takes Two Adjacency Matrices of size c*gs and combines them in a way defined by mode. Here by setting the graph to size c*gs instead of gs is done just for consitency in a function
+
+Arguments
+
+* **c*gs**: The Number of Nodes of each Graph.
+
+* **mode**: either "and","prod","or" or "sum". Here "and" and "or" are Rounded versions of "prod" and "sum" respectively. The kind of Transformation that combines the Graphs.
+
+* **cut=0.5**: Where to round the graph after the mode transformation, Each Value above cut will be set to 1 and each value below to 0, each Value that is equal to cut will be also set to 1
+
+* **c_const=1000**: Since the Rounding is implementet using relus (relu(1+c_const*(X-cut))-relu(c_const*(X-cut))) , you require a numerical constant to decide how fast the rounding function goes from 0 to 1. This could be set higher, but this could result in diverging gradients.
+
+
+

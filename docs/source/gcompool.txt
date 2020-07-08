@@ -1,0 +1,20 @@
+gcompool
+========
+
+Orders a Feature vector of size (-1,gs,param), orders it by its last Feature and uses a simple Dense Layer to transform each c neighbouring Feature Vectors into one Feature Vector of size paramo (-1,gs/c,paramo)
+
+Arguments
+
+* **gs**: The initial Number of Nodes in each Graph.
+
+* **param**: The initial Number of Features in each Node.
+
+* **paramo**: The Number of Features in each output Node.
+
+* **c=2**: How many Input Feature Vectors are to be transformed into one Output Vector
+
+* **metrik_init="glorot_uniform"**: Initializer of the Transformation
+
+* **learnable=True**: Weather the Transformation is learnable.
+
+
