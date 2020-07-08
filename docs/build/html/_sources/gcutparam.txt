@@ -1,0 +1,15 @@
+gcutparam
+=========
+
+Splits a Feature Vector (-1,gs,param1+param2) into two Feature Vectors (-1,gs,param1) and (-1,gs,param2). Opposite of ghealparam.
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param1**: The Number of Features for each node in the first output Vector
+
+* **param2**: The Number of Features for each node in the second output Vector
+
+
+

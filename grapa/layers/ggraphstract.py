@@ -8,11 +8,46 @@ import tensorflow as t
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam,SGD
 from tensorflow.linalg import trace
-from kron import kronecker_product as kron 
-from kron import kronecker_product_b1 as kron_b1
-from kron import kronecker_product_b2 as kron_b2
-from kron import kronecker_product_bb as kron_bb
 
+from tensorflow.python.ops import array_ops
+#from
+#https://github.com/tensorflow/tensorflow/blob/r1.8/tensorflow/contrib/kfac/python/ops/utils.py
+
+def kron(mat1, mat2):
+  """Computes the Kronecker product two matrices."""
+  m1, n1 = mat1.get_shape().as_list()
+  mat1_rsh = array_ops.reshape(mat1, [m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()
+  mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [m1 * m2, n1 * n2])
+def kron_b1(mat1, mat2):
+  """Computes the Kronecker product two matrices, assuming batchdim(mat1)=1."""
+  m1, n1 = mat1.get_shape().as_list()[1:]
+  mat1_rsh = array_ops.reshape(mat1, [-1,m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()
+  mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,m1 * m2, n1 * n2])
+def kron_b2(mat1, mat2):
+  """Computes the Kronecker product two matrices, assuming batchdim(mat2)=1."""
+  m1, n1 = mat1.get_shape().as_list()
+  mat1_rsh = array_ops.reshape(mat1, [m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()[1:]
+  mat2_rsh = array_ops.reshape(mat2, [-1,1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,m1 * m2, n1 * n2])
+def kron_bb(mat1, mat2):
+  """Computes the Kronecker product two matrices, assuming batchdim(mat1/2)=1."""
+  m1, n1 = mat1.get_shape().as_list()[1:]
+  mat1_rsh = array_ops.reshape(mat1, [-1, m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()[1:]
+  mat2_rsh = array_ops.reshape(mat2, [-1, 1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,m1 * m2, n1 * n2])
+def kron_b1fx1(mat1, mat2):
+  """Computes the Kronecker product two matrices, assuming batchdim(mat1)=1."""
+  f1, m1, n1 = mat1.get_shape().as_list()[1:]
+  mat1_rsh = array_ops.reshape(mat1, [-1,f1,m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()
+  mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,f1,m1 * m2, n1 * n2])
 
 
 

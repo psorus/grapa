@@ -37,7 +37,7 @@ class glmlp(Layer):
         return K.relu(x-q[0])-K.relu(x-q[1])+q[0]
       
   #high number of iterations fail..why?
-  def __init__(self,gs=20,param=40,keepconst=10,iterations=10,alinearity=[-1.0,1.0],initializer='glorot_uniform',i1=30,i2=20,mlpact=K.relu,momentum=0.99,k=16,**kwargs):
+  def __init__(self,gs=20,param=40,keepconst=10,iterations=1,alinearity=[-1.0,1.0],initializer='glorot_uniform',i1=30,i2=20,mlpact=K.relu,momentum=0.99,k=16,**kwargs):
     self.initializer=initializer
     self.gs=gs
     self.param=param

@@ -1,0 +1,14 @@
+glcreate
+========
+
+Takes an Adjacency Matrix and a Feature Vector and create a Feature Vector from this encoding the locality. This is done by concatting for each Feature the old Feature vector and the Feature sum of all neighbouring nodes.
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+
+
+

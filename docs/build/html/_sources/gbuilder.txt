@@ -1,15 +1,14 @@
-gbuilder
-========
+glbuilder
+=========
 
-Simple Graph Construction Algorithm. Probably not very useful, uses the 5th and 6th Feature (4/5 if counting from 0). Also concattes the Adjacency Matrix with the Feature Vector and does not set the Graph to TopK, but each weigth to the negative exponential. Could probably more useful, if you modify getmetrik and fromdistsq. Like gtopk can also add free new parameters
+Similar to gbuilder and gkeepbuilder, this builds a Graph from a Feature Vector and concattes them
 
 Arguments
 
 * **gs**: The Number of Nodes of the Graph (Graph Size)
 
-* **param**: The Number of Features for each node
+* **param**: The Number of Features for each node in the first input Vector
 
-* **free**: Number of new free Features for each node
+* **free**: Additional Features that are createt by this Layer
 
-
-
+* **metrik_initializer=metrik_init**: Initializer of the Metrik of this Layer. Defaults to metrik_init which returns a 0 Matrix, with an 1 in the 4,5 (counting from 0) diagonal Entry.

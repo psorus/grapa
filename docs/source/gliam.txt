@@ -1,0 +1,30 @@
+gliam
+=====
+
+Extension of glim to work with abstract data. Inverts an equivalent glam.
+Inputs an Adjacency matrix and a Feature vector, and returns the updated Feature vector
+
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **a**: Size of the abstraction, think of this as the size of a second batch simension
+
+* **iterations=1**: repeat the Actions of this Layer iterations time
+
+* **alinearity=[-1.0,1.0]**: activation of this Layer, explained better in glm
+
+* **kernel_initializer="glorot_uniform"**: Initializer of this Layer
+
+* **self_initializer=None**: Instead of using kernel_initializer, this can be used to specify an initializer just for the self interaction of this Layer. Has preference over kernel_initializer.
+
+* **neig_initializer=None**: Instead of using kernel_initializer, this can be used to specify an initializer just for the neighbour interaction of this Layer. Has preference over kernel_initializer
+
+* **learnable=True**: weather this Layer has learnable Variables (self and neighbour interaction). Useful for debugging sometimes
+
+
+
+

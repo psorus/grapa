@@ -42,6 +42,31 @@ Contents:
    gcompoolmerge
    gcompool
    gcomreopool
+   gcutparam
+   gcutter
+   gecutter
+   gfeatkeep 
+   gfeat
+   gfromparam
+   ggoparam
+   ggraphstract
+   ghealparam
+   gkeepbuilder
+   gkeepcutter    
+   gkeepmatcut
+   glacreate
+   glam
+   glbuilder
+   glacreate
+   gliam
+   glim
+   glkeep
+   glmlp
+   glm
+   glom
+   gl
+   gltknd  
+   
 
 
 

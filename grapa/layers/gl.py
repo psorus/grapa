@@ -36,7 +36,7 @@ class gl(Layer):
         return K.relu(x-q[0])-K.relu(x-q[1])+q[0]
       
   #high number of iterations fail..why?
-  def __init__(self,graphmax=20,graphvar=40,keepconst=10,iterations=10,alinearity=[-1.0,1.0],kernel_initializer='glorot_uniform',**kwargs):
+  def __init__(self,graphmax=20,graphvar=40,keepconst=10,iterations=1,alinearity=[-1.0,1.0],kernel_initializer='glorot_uniform',**kwargs):
     self.kernel_initializer=kernel_initializer
     self.graphmax=graphmax
     self.graphvar=graphvar

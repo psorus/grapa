@@ -1,0 +1,33 @@
+glmlp
+=====
+
+Extension of glm making the Update procedure more complicated and in line with particleNet. Here each update consists of 3 learnable Dense Layers with included Biases (thus breaking Graph Permutation Symmetry). In between each of these Layers is a Batch Normalisazion Layer and an activation (mlpact)
+
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **keepconst**: The first keepconst Features are keept unchanced
+
+* **iterations=1**: repeat the Actions of this Layer iterations time
+
+* **alinearity=[-1.0,1.0]**: activation of this Layer, explained better in glm
+
+* **initializer="glorot_uniform"**: Initializer of this Layer
+
+* **i1**: Size after the first Dense Layer
+
+* **i2**: Size after the second Dense Layer
+
+* **mlpact=K.relu**: Activation after each Dense Update Step. Requires to be a function
+
+* **momentum=0.99**: Momentum of the BatchNormalisation
+
+* **k=16**: Number of Average Connections in the Graph. Can be ignored, and is ignored in glm, but migth help the Network converge
+
+
+
+

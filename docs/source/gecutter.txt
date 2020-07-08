@@ -1,0 +1,15 @@
+gecutter
+========
+
+Like gcutter, but leaves not the first but the last out nodes
+
+Arguments
+
+* **inn**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **out**: The output Number of Nodes of the Graph, has to be at most as big as inn
+
+* **param**: The Number of Features in each Feature vector
+
+
+

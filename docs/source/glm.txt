@@ -1,0 +1,28 @@
+glm
+===
+
+Central and probably most Important Layer of this Package. Updates a Feature Vector using its corresponding Adjacency Matrices and two learnabel Update Matrices. One selfInteraction Matrix that could be understood as a Dense Layer (without bias) acting on each Particle alone, and one neighbour Interaction Matrix, that connects, and acts on, the Node Features in the Way defined in the Adjacency Matrix
+Inputs an Adjacency matrix and a Feature vector, and returns the updated Feature vector
+
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **iterations=1**: repeat the Actions of this Layer iterations time
+
+* **alinearity=[-1.0,1.0]**: activation of this Layer, is here written in such a way, that alinearities can be applied even when the Number of iterations is big, since every alinearity is defined in such a way, that appliyng it twice, wont do anything more than appliying it once. This is achieved by using relus to construct a function, that is the Identity between two Values (the two values that are inputtet into alinearity), and the first Value if the Input is below the first Value, as well as it is the second Value, if the Input is bigger than this second Value. To extend this, both Values can be set to minus infinity and infinity respectively, by setting this value to a String. To run other Alinearities, disable this Parameter by setting it to [] and run an Activation Layer afterwards.
+
+* **kernel_initializer="glorot_uniform"**: Initializer of this Layer
+
+* **self_initializer=None**: Instead of using kernel_initializer, this can be used to specify an initializer just for the self interaction of this Layer. Has preference over kernel_initializer.
+
+* **neig_initializer=None**: Instead of using kernel_initializer, this can be used to specify an initializer just for the neighbour interaction of this Layer. Has preference over kernel_initializer
+
+* **learnable=True**: weather this Layer has learnable Variables (self and neighbour interaction). Useful for debugging sometimes
+
+
+
+

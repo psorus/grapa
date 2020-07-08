@@ -1,0 +1,15 @@
+ggraphstract
+============
+
+Combines two Adjacency Matrices of size inn1 and inn2 respectively into one Adjacency Matrix of size inn1*inn2 by calculating the Kronecker Produkt
+Both Inputs can have a Batch Dimension (-1,inn,inn) or not (inn,inn)
+
+
+Arguments
+
+* **in1**: The first Adjacency Matrix
+
+* **in2**: The second Adjacency Matrix
+
+
+

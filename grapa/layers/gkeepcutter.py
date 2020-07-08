@@ -14,7 +14,7 @@ from tensorflow.linalg import trace
 
 
 class gkeepcutter(Layer):
-  def __init__(self,inn=30,param=40,out=20,dimension=2,**kwargs):
+  def __init__(self,inn=30,param=40,out=20,dimension=0,**kwargs):
     assert inn>=out
     self.inn=inn
     self.param=param

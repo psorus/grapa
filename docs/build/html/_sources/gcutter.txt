@@ -1,0 +1,15 @@
+gcutter
+=======
+
+Cuts the last Nodes from a Featurevector (-1,inn,param) => (-1,out,param)
+
+Arguments
+
+* **inn**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **out**: The output Number of Nodes of the Graph, has to be at most as big as inn
+
+* **param**: The Number of Features in each Feature vector
+
+
+

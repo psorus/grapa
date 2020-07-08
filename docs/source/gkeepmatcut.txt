@@ -1,0 +1,15 @@
+gkeepmatcut
+===========
+
+Cuts out the first Adjacency Matrix out of a Concattet Graph with (dimension+1) Adjacency Matrices
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the first input Vector
+
+* **dimension=0**: Number of Additional Adjacency Matrices
+
+
+

@@ -1,0 +1,15 @@
+glacreate
+=========
+
+Extension of glcreate to work also on a abstract data.
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **a=2**: Size of the abstraction, think of this as the size of a second batch simension
+
+
+

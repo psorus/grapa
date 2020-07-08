@@ -38,7 +38,7 @@ class glim(Layer):#not anymore using keepconst, also not setting the diagonal to
         return K.relu(x-q[0])-K.relu(x-q[1])+q[0]
       
   #high number of iterations fail..why?
-  def __init__(self,gs=20,param=40,iterations=10,alinearity=[-1.0,1.0],kernel_initializer='glorot_uniform',self_initializer=None,neig_initializer=None,learnable=True,**kwargs):
+  def __init__(self,gs=20,param=40,iterations=1,alinearity=[-1.0,1.0],kernel_initializer='glorot_uniform',self_initializer=None,neig_initializer=None,learnable=True,**kwargs):
     if self_initializer==None:
       self.self_initializer=kernel_initializer
     else:

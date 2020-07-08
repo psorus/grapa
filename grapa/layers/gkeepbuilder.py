@@ -14,7 +14,7 @@ from tensorflow.linalg import trace
 
 
 class gkeepbuilder(Layer):
-  def __init__(self,gs=30,param=10,free=30,learnable=True,dimension=2,use0=False,**kwargs):
+  def __init__(self,gs=30,param=10,free=30,learnable=True,dimension=0,use0=False,**kwargs):
     self.gs=gs
     self.param=param
     self.free=free

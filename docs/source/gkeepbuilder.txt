@@ -1,0 +1,21 @@
+gkeepbuilder
+============
+
+Extension of gbuilder, allowing for multiple Adjacency Matrices (dimension+1) and a learnable metrik.
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the first input Vector
+
+* **free**: Additional Features that are createt by this Layer
+
+* **learnable=True**: Is the metrik learnable?
+
+* **dimension=0**: Number of Additional Adjacency Matrices
+
+* **use0=False**:Allows you to toggle, if your metrik and thus distance should include the first of the variables
+
+
+

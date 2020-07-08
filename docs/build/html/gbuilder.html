@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>gbuilder &mdash; Grapa 0.1 documentation</title>
+    <title>glbuilder &mdash; Grapa 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -51,14 +51,15 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="gbuilder">
-<h1>gbuilder<a class="headerlink" href="#gbuilder" title="Permalink to this headline">¶</a></h1>
-<p>Simple Graph Construction Algorithm. Probably not very useful, uses the 5th and 6th Feature (4/5 if counting from 0). Also concattes the Adjacency Matrix with the Feature Vector and does not set the Graph to TopK, but each weigth to the negative exponential. Could probably more useful, if you modify getmetrik and fromdistsq. Like gtopk can also add free new parameters</p>
+  <div class="section" id="glbuilder">
+<h1>glbuilder<a class="headerlink" href="#glbuilder" title="Permalink to this headline">¶</a></h1>
+<p>Similar to gbuilder and gkeepbuilder, this builds a Graph from a Feature Vector and concattes them</p>
 <p>Arguments</p>
 <ul class="simple">
 <li><strong>gs</strong>: The Number of Nodes of the Graph (Graph Size)</li>
-<li><strong>param</strong>: The Number of Features for each node</li>
-<li><strong>free</strong>: Number of new free Features for each node</li>
+<li><strong>param</strong>: The Number of Features for each node in the first input Vector</li>
+<li><strong>free</strong>: Additional Features that are createt by this Layer</li>
+<li><strong>metrik_initializer=metrik_init</strong>: Initializer of the Metrik of this Layer. Defaults to metrik_init which returns a 0 Matrix, with an 1 in the 4,5 (counting from 0) diagonal Entry.</li>
 </ul>
 </div>
 

@@ -1,0 +1,17 @@
+gkeepcutter
+===========
+
+Cuts a concattet Graph with (dimension+1) Adjacency Matrices of size inn into a Graph of size out
+
+Arguments
+
+* **inn**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **out**: The resulting Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the first input Vector
+
+* **dimension=0**: Number of Additional Adjacency Matrices
+
+
+

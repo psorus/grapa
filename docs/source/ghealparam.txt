@@ -1,0 +1,15 @@
+ghealparam
+==========
+
+Combines two Feature Vectors (-1,gs,param1) and (-1,gs,param2) into one Feature Vector (-1,gs,param1+param2). Opposite of gcutparam.
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param1**: The Number of Features for each node in the first input Vector
+
+* **param2**: The Number of Features for each node in the second input Vector
+
+
+

@@ -14,7 +14,7 @@ from tensorflow.linalg import trace
 
 
 class gkeepmatcut(Layer):
-  def __init__(self,gs=30,param=40,dimension=2,**kwargs):
+  def __init__(self,gs=30,param=40,dimension=0,**kwargs):
     self.gs=gs
     self.param=param
     self.dimension=dimension

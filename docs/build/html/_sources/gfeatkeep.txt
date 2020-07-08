@@ -1,0 +1,16 @@
+gfeatkeep
+=========
+
+
+If your Adjacency Matrix or (dimension+1) Adjacency Matrices are concattet, this can cut out the Feature Vector. Extension of gfeat
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+* **dimension=0**: The Number of Adjacency Matrices concattet together (ignoring the first one) before the features
+
+

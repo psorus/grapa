@@ -1,0 +1,14 @@
+gfromparam
+==========
+
+Transforms a 3 dimensional Featurevector (-1,gs,param) into a 2 dimensional Featurevector (-1,gs*param) that can be used for example with classical Dense Layers. Opposite of ggoparam
+
+
+Arguments
+
+* **gs=1**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+
+

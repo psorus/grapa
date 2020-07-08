@@ -1,0 +1,23 @@
+gl
+==
+
+Old Preceding Version of glm, that works on concattet Graphs, but unlike glkeep does not allow for any dimension parameter
+
+
+Arguments
+
+* **graphmax**: What is usually called gs. The Number of Nodes of the Graph (Graph Size)
+
+* **graphvar**: What is usually called param,The Number of Features for each node in the Feature Vector
+
+* **keepconst**: The Number of Features that are manually kept unchanced by this Layer
+
+* **iterations=1**: repeat the Actions of this Layer iterations time
+
+* **alinearity=[-1.0,1.0]**: activation of this Layer, explained in glm
+
+* **kernel_initializer="glorot_uniform"**: Initializer of this Layer
+
+
+
+
