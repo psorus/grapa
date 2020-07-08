@@ -1,7 +1,7 @@
 glmlp
 =====
 
-Extension of glm making the Update procedure more complicated and in line with particleNet. Here each update consists of 3 learnable Dense Layers with included Biases (thus breaking Graph Permutation Symmetry). In between each of these Layers is a Batch Normalisazion Layer and an activation (mlpact)
+Extension of gltknd making the Update procedure more complicated and in line with particleNet. Here each update consists of 3 learnable Dense Layers with included Biases (thus breaking Graph Permutation Symmetry). In between each of these Layers is a Batch Normalisazion Layer and an activation (mlpact)
 
 
 Arguments

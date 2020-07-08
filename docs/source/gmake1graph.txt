@@ -1,0 +1,11 @@
+gmake1graph
+===========
+
+Generates a trivial Graph of size (-1,1,1) that is entirely 1 and uses the Batch dimension of the Input
+
+Arguments
+
+none
+
+
+

@@ -1,0 +1,14 @@
+gtlbuilder
+==========
+
+Similar to gtbuilder but the Metrik is learnable and initialised to 1
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each Node
+
+* **free**: The Number of empty Features this Node creates
+
+

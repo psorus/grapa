@@ -1,0 +1,15 @@
+gvaluation
+==========
+
+Takes a Featurevector and concats it with a new Feature that is a learnable (simple Dense) Function of the old Features
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each Node
+
+* **metrik_init="glorot_uniform"**: initializer of the Function
+
+* **learnable=True**: Should the Function be learnable
+

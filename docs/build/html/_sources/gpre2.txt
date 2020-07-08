@@ -1,0 +1,32 @@
+gpre2
+=====
+
+One of the Data Preproccessing Layers that is mostly not useful for anything not Particle Physics related, since it assumes the Input to be a list of lists of Momentum 4 vectors.
+Is Outdatet, buggy and only here for consistency
+
+
+Arguments
+
+* **gs**: The Number of Particles used, will become the Number of Nodes (Graph size)
+
+* **numericC=10000**: A Numerical Constant that will be sometimes used to keep things finite
+
+
+Produced Features
+
+* eta-mean(eta)
+
+* phi-mean(phi)
+
+* ln(pt)
+
+* ln(E)
+
+* -ln(pt/sum(pt))
+
+* -ln(E/sum(E))
+
+* sqrt((eta-mean(eta))**2+(phi-mean(phi))**2)
+
+* iszero (a flag to filter out missing(zero) particles)
+

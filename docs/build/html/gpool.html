@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>glmlp &mdash; Grapa 0.1 documentation</title>
+    <title>gpool &mdash; Grapa 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Grapa 0.1 documentation" href="index.html" />
-    <link rel="next" title="glm" href="glm.html" />
-    <link rel="prev" title="glkeep" href="glkeep.html" /> 
+    <link rel="next" title="gpre1" href="gpre1.html" />
+    <link rel="prev" title="gpoolgrowth" href="gpoolgrowth.html" /> 
   </head>
   <body>
     <div class="related">
@@ -37,10 +37,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="glm.html" title="glm"
+          <a href="gpre1.html" title="gpre1"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="glkeep.html" title="glkeep"
+          <a href="gpoolgrowth.html" title="gpoolgrowth"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -51,22 +51,14 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="glmlp">
-<h1>glmlp<a class="headerlink" href="#glmlp" title="Permalink to this headline">¶</a></h1>
-<p>Extension of gltknd making the Update procedure more complicated and in line with particleNet. Here each update consists of 3 learnable Dense Layers with included Biases (thus breaking Graph Permutation Symmetry). In between each of these Layers is a Batch Normalisazion Layer and an activation (mlpact)</p>
+  <div class="section" id="gpool">
+<h1>gpool<a class="headerlink" href="#gpool" title="Permalink to this headline">¶</a></h1>
+<p>Simple Pooling Layer. Allows you to reduce a 3 dimensional Tensor (-1,gs,param) into (-1,param) by running a Pooling Operation on each Node. Is the simplest way to finish a classical Graph Network that does not break Graph Permutation Symmetry</p>
 <p>Arguments</p>
 <ul class="simple">
-<li><strong>gs</strong>: The gs Number of Nodes of the Graph (Graph Size)</li>
-<li><strong>param</strong>: The Number of Features for each node in the Feature Vector</li>
-<li><strong>keepconst</strong>: The first keepconst Features are keept unchanced</li>
-<li><strong>iterations=1</strong>: repeat the Actions of this Layer iterations time</li>
-<li><strong>alinearity=[-1.0,1.0]</strong>: activation of this Layer, explained better in glm</li>
-<li><strong>initializer=&#8221;glorot_uniform&#8221;</strong>: Initializer of this Layer</li>
-<li><strong>i1</strong>: Size after the first Dense Layer</li>
-<li><strong>i2</strong>: Size after the second Dense Layer</li>
-<li><strong>mlpact=K.relu</strong>: Activation after each Dense Update Step. Requires to be a function</li>
-<li><strong>momentum=0.99</strong>: Momentum of the BatchNormalisation</li>
-<li><strong>k=16</strong>: Number of Average Connections in the Graph. Can be ignored, and is ignored in glm, but migth help the Network converge</li>
+<li><strong>gs</strong>: The Number of Nodes of the Graph (Graph Size)</li>
+<li><strong>param</strong>: The Number of Features for each Node</li>
+<li><strong>mode=&#8221;max&#8221;</strong>: Pooling Operation, either &#8220;max&#8221;,&#8221;mean&#8221; or &#8220;sum&#8221;</li>
 </ul>
 </div>
 
@@ -77,14 +69,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="glkeep.html"
-                        title="previous chapter">glkeep</a></p>
+  <p class="topless"><a href="gpoolgrowth.html"
+                        title="previous chapter">gpoolgrowth</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="glm.html"
-                        title="next chapter">glm</a></p>
+  <p class="topless"><a href="gpre1.html"
+                        title="next chapter">gpre1</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/glmlp.txt"
+    <li><a href="_sources/gpool.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -111,10 +103,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="glm.html" title="glm"
+          <a href="gpre1.html" title="gpre1"
              >next</a> |</li>
         <li class="right" >
-          <a href="glkeep.html" title="glkeep"
+          <a href="gpoolgrowth.html" title="gpoolgrowth"
              >previous</a> |</li>
         <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>

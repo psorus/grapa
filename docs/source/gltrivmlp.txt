@@ -1,8 +1,7 @@
-glmlp
-=====
+gltrivmlp
+=========
 
-Extension of gltknd making the Update procedure more complicated and in line with particleNet. Here each update consists of 3 learnable Dense Layers with included Biases (thus breaking Graph Permutation Symmetry). In between each of these Layers is a Batch Normalisazion Layer and an activation (mlpact)
-
+Copy of glmlp but with a trivial update procedure (cut to the desired size). Sometimes useful for debugging
 
 Arguments
 
@@ -13,6 +12,8 @@ Arguments
 * **keepconst**: The first keepconst Features are keept unchanced
 
 * **iterations=1**: repeat the Actions of this Layer iterations time
+
+All remaining Parameters can be given, but have no effect
 
 * **alinearity=[-1.0,1.0]**: activation of this Layer, explained better in glm
 

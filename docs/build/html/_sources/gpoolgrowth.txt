@@ -1,0 +1,18 @@
+gpoolgrowth
+===========
+
+Takes a List of Featurevectors for one Node (-1,param) and the old Feature vector, to learn from this 2d Vector (out-inn) new nodes (using a 1 layer dense), that are concattet to the old Featurevector and returned
+
+
+Arguments
+
+* **inn**: The initial Number of Nodes of the Graph (Graph Size)
+
+* **out**: The resulting Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each Node
+
+* **kernel_initializer=glorot_uniform**: The initializer of the Transformation
+
+
+

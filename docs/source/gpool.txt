@@ -1,0 +1,17 @@
+gpool
+=====
+
+Simple Pooling Layer. Allows you to reduce a 3 dimensional Tensor (-1,gs,param) into (-1,param) by running a Pooling Operation on each Node. Is the simplest way to finish a classical Graph Network that does not break Graph Permutation Symmetry
+
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each Node
+
+* **mode="max"**: Pooling Operation, either "max","mean" or "sum"
+
+
+

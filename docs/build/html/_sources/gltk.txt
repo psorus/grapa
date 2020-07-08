@@ -1,0 +1,23 @@
+gltk
+====
+
+Precessor of gltknd. Does not allow for different initializer for each Interaction type.
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **keepconst**: The first keepconst Features are kept unchanced
+
+* **iterations**: The Actions of this Layer are repeatet iterations time
+
+* **alinearity=[-1.0,1.0]**: activation of this Layer, explained in glm
+
+* **kernel_initializer="glorot_uniform"**: Initializer of this Layer
+
+
+
+
+

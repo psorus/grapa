@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>glmlp &mdash; Grapa 0.1 documentation</title>
+    <title>gpre2 &mdash; Grapa 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Grapa 0.1 documentation" href="index.html" />
-    <link rel="next" title="glm" href="glm.html" />
-    <link rel="prev" title="glkeep" href="glkeep.html" /> 
+    <link rel="next" title="gpre3" href="gpre3.html" />
+    <link rel="prev" title="gpre1" href="gpre1.html" /> 
   </head>
   <body>
     <div class="related">
@@ -37,10 +37,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="glm.html" title="glm"
+          <a href="gpre3.html" title="gpre3"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="glkeep.html" title="glkeep"
+          <a href="gpre1.html" title="gpre1"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -51,22 +51,25 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="glmlp">
-<h1>glmlp<a class="headerlink" href="#glmlp" title="Permalink to this headline">¶</a></h1>
-<p>Extension of gltknd making the Update procedure more complicated and in line with particleNet. Here each update consists of 3 learnable Dense Layers with included Biases (thus breaking Graph Permutation Symmetry). In between each of these Layers is a Batch Normalisazion Layer and an activation (mlpact)</p>
+  <div class="section" id="gpre2">
+<h1>gpre2<a class="headerlink" href="#gpre2" title="Permalink to this headline">¶</a></h1>
+<p>One of the Data Preproccessing Layers that is mostly not useful for anything not Particle Physics related, since it assumes the Input to be a list of lists of Momentum 4 vectors.
+Is Outdatet, buggy and only here for consistency</p>
 <p>Arguments</p>
 <ul class="simple">
-<li><strong>gs</strong>: The gs Number of Nodes of the Graph (Graph Size)</li>
-<li><strong>param</strong>: The Number of Features for each node in the Feature Vector</li>
-<li><strong>keepconst</strong>: The first keepconst Features are keept unchanced</li>
-<li><strong>iterations=1</strong>: repeat the Actions of this Layer iterations time</li>
-<li><strong>alinearity=[-1.0,1.0]</strong>: activation of this Layer, explained better in glm</li>
-<li><strong>initializer=&#8221;glorot_uniform&#8221;</strong>: Initializer of this Layer</li>
-<li><strong>i1</strong>: Size after the first Dense Layer</li>
-<li><strong>i2</strong>: Size after the second Dense Layer</li>
-<li><strong>mlpact=K.relu</strong>: Activation after each Dense Update Step. Requires to be a function</li>
-<li><strong>momentum=0.99</strong>: Momentum of the BatchNormalisation</li>
-<li><strong>k=16</strong>: Number of Average Connections in the Graph. Can be ignored, and is ignored in glm, but migth help the Network converge</li>
+<li><strong>gs</strong>: The Number of Particles used, will become the Number of Nodes (Graph size)</li>
+<li><strong>numericC=10000</strong>: A Numerical Constant that will be sometimes used to keep things finite</li>
+</ul>
+<p>Produced Features</p>
+<ul class="simple">
+<li>eta-mean(eta)</li>
+<li>phi-mean(phi)</li>
+<li>ln(pt)</li>
+<li>ln(E)</li>
+<li>-ln(pt/sum(pt))</li>
+<li>-ln(E/sum(E))</li>
+<li>sqrt((eta-mean(eta))**2+(phi-mean(phi))**2)</li>
+<li>iszero (a flag to filter out missing(zero) particles)</li>
 </ul>
 </div>
 
@@ -77,14 +80,14 @@
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="glkeep.html"
-                        title="previous chapter">glkeep</a></p>
+  <p class="topless"><a href="gpre1.html"
+                        title="previous chapter">gpre1</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="glm.html"
-                        title="next chapter">glm</a></p>
+  <p class="topless"><a href="gpre3.html"
+                        title="next chapter">gpre3</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/glmlp.txt"
+    <li><a href="_sources/gpre2.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -111,10 +114,10 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="glm.html" title="glm"
+          <a href="gpre3.html" title="gpre3"
              >next</a> |</li>
         <li class="right" >
-          <a href="glkeep.html" title="glkeep"
+          <a href="gpre1.html" title="gpre1"
              >previous</a> |</li>
         <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>

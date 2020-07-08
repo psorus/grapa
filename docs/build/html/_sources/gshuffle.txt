@@ -1,0 +1,15 @@
+gshuffle
+========
+
+Shuffles each Featurevector in a random Manner. But compared to gortho, the Transformation is not constant in training but the seed only sets the inital transformation
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+* **seed=None**: seed generating the Transformation
+
+

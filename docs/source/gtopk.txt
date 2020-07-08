@@ -1,0 +1,31 @@
+gtopk
+=====
+
+The probably most useful Graph creation algorithm in this Package. Runs a TopK algorithm, connecting each node to its K neirest neighbours in a Space with a learnable Metrik.
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each Node
+
+* **k**: How many connections should each node have
+
+* **free**: How many empty Features does this Layer create
+
+* **learnable**: Weather the metrik should be learnable
+
+* **self_interaction=False**: Should connections from a node to its self be allowed? Please note, that for any metrik with elements below zero does not require that the distance from a node to another node is minimal when both nodes are the same.
+
+* **self_interaction_const=100.0**: To disallow connections between the same nodes, the Layer adds this constant to the distance between those nodes, so this constant should probably be modified if needed and the order of magnitude of the Input is large.
+
+* **metrik_init=keras.initializers.TruncatedNormal(mean=0.0,stddev=0.05)**: Initializer of the metrik defining distances
+
+* **numericalC=10000**: Constant for Numerical Safety
+
+* **emptyconst=100000000.0**: This Layer understands Flags. Sums distances between non flagged Nodes with this constant. It is so much higher than self_interaction_const, since the Graph Permutation Symmetry henges on it
+
+* **flag=7**: The Flag index
+
+

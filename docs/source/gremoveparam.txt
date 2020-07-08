@@ -1,0 +1,16 @@
+gremoveparam
+============
+
+A simple Layer to remove Features
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **inn**: The initial Number of Features for each Node
+
+* **out**: The resulting Number of Features for each Node
+
+
+

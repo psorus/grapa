@@ -1,0 +1,17 @@
+gpartinorm
+==========
+
+Normalises each Feature in each Batch in a special way:
+After subtracting the mean of each vector x, it subtracts the mean(abs(x)) from it, just to divide it by (mean(abs(x))+max(abs(x)))/2.
+
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+* **alpha=0.01**: A numeric Constant to remove divergences from dividing (instead of 1/a it uses 1/(abs(a)+alpha))
+
+

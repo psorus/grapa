@@ -1,0 +1,15 @@
+gortho
+======
+
+Runs a random, but fixed orthogonal Transformation mixing the Features
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+* **seed=None**: seed generating the Transformation
+
+

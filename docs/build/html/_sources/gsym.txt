@@ -1,0 +1,10 @@
+gsym
+====
+
+Symmetrises a Adjacency Matrix, by adding the Transposed Matrix to it and rounding it (rounding is simplified by setting the Numerical constant to a low fixed Value of 5). You could understand this as a connection A_ij is one, if either A_ij or A_ji is one.
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+

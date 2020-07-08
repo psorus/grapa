@@ -1,0 +1,14 @@
+gtbuilder
+=========
+
+Similar to the other builders on concattet graphs, but uses exactly 2 Adjacency Matrices which are combined in way defined by a constant metrik, creating a concattet graph with only 1 Adjacency Matrix
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each Node
+
+* **free**: The Number of empty Features this Node creates
+
+

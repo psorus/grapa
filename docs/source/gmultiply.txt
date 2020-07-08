@@ -1,0 +1,16 @@
+gmultiply
+=========
+
+Takes a feature Vector and multiplies each Number of Nodes by copiyng it c times. So transforms (-1,gs,param) into (-1,gs*c,param)
+
+
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+* **c=2**: The Number of repetitions
+
+

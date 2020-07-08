@@ -1,0 +1,14 @@
+gperm
+=====
+
+Probably a useless Layer since it only works in a 16dimensional Feature Space.
+Similar to gortho, but uses a (fixed) Permutation Matrix.
+
+Arguments
+
+* **gs**: The Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features in each Feature vector
+
+
+

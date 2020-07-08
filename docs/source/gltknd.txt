@@ -1,0 +1,28 @@
+gltknd
+======
+
+Precessor of glm. glm works by using a Kronecker Product to convert the Update into only One Matrix. This allows to invert Layers and accelerates high iterations. The central difference to gltknd is that gltknd is not written like this, but calculates each update step on each own. This should mostly be only useful if you require keepconst.
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **keepconst**: The first keepconst Features are kept unchanced
+
+* **iterations**: Repeat the Actions of this Layer iterations time
+
+* **alinearity=[-1.0,1.0]**: activation of this Layer, explained in glm
+
+* **kernel_initializer="glorot_uniform"**: Initializer of this Layer
+
+* **self_initializer=None**: Instead of using kernel_initializer, this can be used to specify an initializer just for the self interaction of this Layer. Has preference over kernel_initializer.
+
+* **neig_initializer=None**: Instead of using kernel_initializer, this can be used to specify an initializer just for the neighbour interaction of this Layer. Has preference over kernel_initializer
+
+* **learnable=True**: weather this Layer has learnable Variables (self and neighbour interaction). Useful for debugging sometimes
+
+
+
+
