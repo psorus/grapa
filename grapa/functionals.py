@@ -11,96 +11,13 @@ from tensorflow.keras.optimizers import Adam,SGD,RMSprop
 from tensorflow.keras.utils import plot_model
 
 ###import all the "migth be used" special layers
-from gbuilder import *
-from gtbuilder import *
-from glbuilder import *
-from gtlbuilder import *
-from gcutter import *
-from gpool import *
-from gfeat import *
-from gl import *
-from gkeepbuilder import *
-from glkeep import *
-from gfeatkeep import *
-from gkeepcutter import *
-from gkeepmatcut import *
-from gtopk import *
-from gltk import *
-from gltknd import *
-from gpre1 import *
-from gpre2 import *
-from gpre3 import *
-from gpre4 import *
-from gpre5 import *
-from glmlp import *
-from gltrivmlp import *
-from gadd1 import *
-from gaddzeros import *
-from gsym import *
-from gbrokengrowth import *
-from gpoolgrowth import *
-from gremoveparam import *
-from gcomdepool import *
-from gcompool import *
-from gvaluation import *
-from ggoparam import *
-from gfromparam import *
-from gaddbias import *
-from gssort import *
-from winit import *
-from glm import *
-from glom import *#probably useless
-from glim import *
-from ggraphstract import *
-from gmake1graph import *
-from gcomdepoolplus import *
-from gcomdex import *
-from gcomjpool import *
-from gcomgpool import *
-from gchooseparam import *
-from gcomdepoollg import *
-from gcomdiagraph import *
-from gcomreopool import *
-from gcomparastract import *
-from glam import *
-from gcomdensemerge import *
-from gcompoolmerge import *
-from gcomgraphcutter import *
-from gcomdensediverge import *
-from gcomgraphfromparam import *
-from gcomgraphcombinations import *
-from gcomgraphand import *
-from gcomgraphrepeat import *
-from gcomgraphlevel import *
-from gcomgraphand2 import *
-from gcomparamlevel import *
-from gliam import *
-from gcomfullyconnected import *
-from gcomparamcombinations import *
-from gcomgraphfrom2param import *
-from gcomextractdiag import *
-from gmultiply import *
-from dedge import *
-from dexpand import  *
-from dnarrow import *
-from dtorb import *
-from dreflag import *
-from dtcreate import *
-from dtdestroy import *
-from glcreate import *
-from glacreate import *
-from gshuffle import *
-from gortho import *
-from gperm import *
-from gpartinorm import *
-from gcutparam import *
-from ghealparam import *
-from gecutter import *
 
-objects={"gbuilder":gbuilder,"gtbuilder":gtbuilder,"glbuilder":glbuilder,"gtlbuilder":gtlbuilder,"gcutter":gcutter,"gpool":gpool,"gfeat":gfeat,"gl":gl,"gkeepbuilder":gkeepbuilder,"glkeep":glkeep,"gfeatkeep":gfeatkeep,"gkeepcutter":gkeepcutter,"gkeepmatcut":gkeepmatcut,"gtopk":gtopk,"gltk":gltk,"gltknd":gltknd,"gpre1":gpre1,"gpre2":gpre2,"gpre3":gpre3,"gpre4":gpre4,"gpre5":gpre5,"glmlp":glmlp,"gltrivmlp":gltrivmlp,"gadd1":gadd1,"gaddzeros":gaddzeros,"gsym":gsym,"gbrokengrowth":gbrokengrowth,"gpoolgrowth":gpoolgrowth,"gremoveparam":gremoveparam,"gcompool":gcompool,"gcomdepool":gcomdepool,"gvaluation":gvaluation,"ggoparam":ggoparam,"gfromparam":gfromparam,"gaddbias":gaddbias,"gssort":gssort,"glm":glm,"glom":glom,"glim":glim,"ggraphstract":ggraphstract,"gmake1graph":gmake1graph,"gcomdepoolplus":gcomdepoolplus,"gcomdex":gcomdex,"gcomjpool":gcomjpool,"gcomgpool":gcomgpool,"gchooseparam":gchooseparam,"gcomdepoollg":gcomdepoollg,"gcomdiagraph":gcomdiagraph,"gcomreopool":gcomreopool,"gcomparastract":gcomparastract,"glam":glam,"gcomdensemerge":gcomdensemerge,"gcompoolmerge":gcompoolmerge,"gcomgraphcutter":gcomgraphcutter,"gcomdensediverge":gcomdensediverge,"gcomgraphfromparam":gcomgraphfromparam,"gcomgraphcombinations":gcomgraphcombinations,"gcomgraphand":gcomgraphand,"gcomgraphrepeat":gcomgraphrepeat,"gcomgraphlevel":gcomgraphlevel,"gcomgraphand2":gcomgraphand2,"gcomparamlevel":gcomparamlevel,"gliam":gliam,"gcomfullyconnected":gcomfullyconnected,"gcomparamcombinations":gcomparamcombinations,"gcomgraphfrom2param":gcomgraphfrom2param,"gcomextractdiag":gcomextractdiag,"gmultiply":gmultiply,"dedge":dedge,"dexpand":dexpand,"dnarrow":dnarrow,"dtorb":dtorb,"dreflag":dreflag,"dtcreate":dtcreate,"dtdestroy":dtdestroy,"glcreate":glcreate,"glacreate":glacreate,"gshuffle":gshuffle,"gortho":gortho,"gperm":gperm,"gpartinorm":gpartinorm,"gcutparam":gcutparam,"ghealparam":ghealparam,"gecutter":gecutter}
+from grapa.layers import *
+
+objects={"gbuilder":gbuilder,"gtbuilder":gtbuilder,"glbuilder":glbuilder,"gtlbuilder":gtlbuilder,"gcutter":gcutter,"gpool":gpool,"gfeat":gfeat,"gl":gl,"gkeepbuilder":gkeepbuilder,"glkeep":glkeep,"gfeatkeep":gfeatkeep,"gkeepcutter":gkeepcutter,"gkeepmatcut":gkeepmatcut,"gtopk":gtopk,"gltk":gltk,"gltknd":gltknd,"gpre1":gpre1,"gpre2":gpre2,"gpre3":gpre3,"gpre4":gpre4,"gpre5":gpre5,"glmlp":glmlp,"gltrivmlp":gltrivmlp,"gadd1":gadd1,"gaddzeros":gaddzeros,"gsym":gsym,"gbrokengrowth":gbrokengrowth,"gpoolgrowth":gpoolgrowth,"gremoveparam":gremoveparam,"gcompool":gcompool,"gcomdepool":gcomdepool,"gvaluation":gvaluation,"ggoparam":ggoparam,"gfromparam":gfromparam,"gaddbias":gaddbias,"gssort":gssort,"glm":glm,"glom":glom,"glim":glim,"ggraphstract":ggraphstract,"gmake1graph":gmake1graph,"gcomdepoolplus":gcomdepoolplus,"gcomdex":gcomdex,"gcomjpool":gcomjpool,"gcomgpool":gcomgpool,"gchooseparam":gchooseparam,"gcomdepoollg":gcomdepoollg,"gcomdiagraph":gcomdiagraph,"gcomreopool":gcomreopool,"gcomparastract":gcomparastract,"glam":glam,"gcomdensemerge":gcomdensemerge,"gcompoolmerge":gcompoolmerge,"gcomgraphcutter":gcomgraphcutter,"gcomdensediverge":gcomdensediverge,"gcomgraphfromparam":gcomgraphfromparam,"gcomgraphcombinations":gcomgraphcombinations,"gcomgraphand":gcomgraphand,"gcomgraphrepeat":gcomgraphrepeat,"gcomgraphlevel":gcomgraphlevel,"gcomgraphand2":gcomgraphand2,"gcomparamlevel":gcomparamlevel,"gliam":gliam,"gcomfullyconnected":gcomfullyconnected,"gcomparamcombinations":gcomparamcombinations,"gcomgraphfrom2param":gcomgraphfrom2param,"gcomextractdiag":gcomextractdiag,"gmultiply":gmultiply,"glcreate":glcreate,"glacreate":glacreate,"gshuffle":gshuffle,"gortho":gortho,"gperm":gperm,"gpartinorm":gpartinorm,"gcutparam":gcutparam,"ghealparam":ghealparam,"gecutter":gecutter}
 
 
-from constants import *
+from grapa.constants import *
 
 
 

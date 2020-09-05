@@ -1,0 +1,27 @@
+multidense
+==========
+
+Runs just a list of Dense Layers (defined by m.mdense* and by the parameter q, which gives width and number of Layers) on the last axis of the input data
+
+Arguments
+
+* **g**: A grap Class containing an Adjacency Matrix and a Feature vector, as well as a state Class containing the current standart Values for gs(=Graph Size, Number of Nodes in the Graph) and param (=Parameter Count, Number of Features for each Node)
+
+* **m**: The Constants defining the Function Behaviours (matching Parameters below)
+
+* **q**: An Array setting the size of each Layer [8,4,7] creates 3 Dense Layers with 8,4 and 7 nodes respectively
+
+
+Constants defined in m
+
+* **mdense_activation="relu"**: The Activation of each Dense Layer
+
+* **mdense_init_kernel=tf.keras.initializers.Identity()**: Kernel Initializer of each Layer
+
+* **mdense_init_bias=tf.keras.initializers.Zeros()**: Bias Initializer of each Layer
+
+* **mdense_usebias=True**: Should this Networks use a Bias Term
+
+* **mdense_batchnorm=False**: Should you use a BatchNormalisationLayer after each Layer
+
+

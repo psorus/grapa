@@ -88,6 +88,11 @@ Contents:
    gtlbuilder
    gtopk     
    gvaluation 
+   fmultidense
+   fnorm
+   fprep
+
+
     
 
 
