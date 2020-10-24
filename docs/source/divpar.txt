@@ -1,0 +1,29 @@
+divpar
+======
+
+A parameter like graph diverger by a factor of c (also does not chance param at all)
+Best handled by decompress
+
+Arguments:
+
+* **g**: a grap object
+
+* **c**: the abstraction factor
+
+* **usei=False**: Use inverse graph update steps
+
+* **alin=[]**: alinearity of the graph update steps, defined in glm
+
+* **iterations=1**: repeat each graph update step this many time (one layer)
+
+* **repeat=1**: repeat this layer repeat time (multiple divergences)
+
+* **multiglam=1**: multiglam graph update steps (multiple layers)
+
+* **amode2="prod"**: combine graphs using this function, options defined in gcomgraphand2 
+
+
+Returns:
+
+* **g**: the updated grap object
+

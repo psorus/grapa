@@ -1,0 +1,17 @@
+ge
+==
+
+the upper level managing particlenet like update steps (like edgeconv and subedge, can mostly use m.edgeconcat to decide if you should concat or replace the output (concat:like particlenet, replace:probably better for autoencoder)
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: constant variable, created for example by getm()
+
+* **k=4**: the k in topK
+
+Returns
+
+* **g**: the updated grap value

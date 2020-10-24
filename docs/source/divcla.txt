@@ -1,0 +1,22 @@
+divcla
+======
+
+classic graph abstractor, also does not chance the paramsize, just goes from one param to c params, and has one learnable matrix (which is const between the elements). Works by usual parameter divergence, and then by abstracting the graphs, with the constant learnable one
+Best handled by decompress
+
+Arguments:
+
+* **g**: a grap object
+
+* **c**: the abstraction factor
+
+* **m**: a constant, defined for example by getm()
+
+* **repeat=1**: repeat this layer repeat time (multiple divergences)
+
+
+Returns:
+
+* **g**: the updated grap object
+
+

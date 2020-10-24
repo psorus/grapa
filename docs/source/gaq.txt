@@ -1,0 +1,21 @@
+gaq
+===
+
+like gq but to work on a bit more abstract data (defined by m.gaq*)
+(for use in graphs of graphs)
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generated for example by getm())
+
+* **a**: which abstraction constant is used
+
+* **steps=4**: how many update steps between after glcreate
+
+
+Returns:
+
+* **g**: the updated grap object
+

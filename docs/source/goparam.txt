@@ -1,0 +1,15 @@
+goparam
+=======
+
+transforms the 3d (-1,gs,param) data into 2d (-1,gs*param) ones. You can use chanceS to disallow this function to chance the settings
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **chanceS=True**: chances the variable of g.s is this is True
+
+Returns
+
+* **g**: the updated grap value

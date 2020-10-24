@@ -1,0 +1,19 @@
+learngraph
+==========
+
+Learns a graph (g.A) as a function of the parameters (g.X). Can also add new parameters to g.X (with free) and you can specify how many connections each node should have (k), mainly used by gll
+
+Arguments:
+
+* **g**: a grap object
+
+* **free=0**: add how many new free parameters to each feature vector
+
+* **k=4**: the k used in the topK layer
+
+
+
+Returns:
+
+* **g**: the updated grap object
+

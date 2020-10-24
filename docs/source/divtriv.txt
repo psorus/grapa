@@ -1,0 +1,27 @@
+divtriv
+=======
+
+trivial graph diverger by a factor of c (does not chance param at all)
+  requiregp=True: require ggoparam at the start
+    addDense: intermediate Dense Layers, sizes between 1 and c useful
+Best handled decompress
+
+Arguments:
+
+* **g**: a grap object
+
+* **c**: the abstraction factor
+
+* **m**: a constant object (generate for example by getm())
+
+* **shallgp**: if the input is 3 dimensional, set this to true. if it is already 2 dimensional (since graphatbottleneck) set it to false
+
+* **addDense=[[]]**: intermediate Dense layer sizes
+
+* **activation**: activation of the dense layers
+
+
+Returns:
+
+* **g**: the updated grap object
+

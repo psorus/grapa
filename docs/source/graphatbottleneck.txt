@@ -1,0 +1,20 @@
+graphatbottleneck
+=================
+
+handles the bottleneck transformations for a pure graph ae, return g, compressed, new input, shallfp=True=>convert vector in matrix (with gfromparam), can use redense to add a couple dense layers around the bottleneck (defined by m.redense*)
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generate for example by getm())
+
+* **shallfp=True**: reshapes the 2 dimensional vector (-1, latent_size) into a 3 dimensional vector (-1,g.s.gs,g.s.param) after this function only if this is true
+
+
+
+Returns:
+
+* **g**: the updated grap object
+

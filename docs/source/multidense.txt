@@ -1,0 +1,19 @@
+multidense
+==========
+
+A function to add multiple Dense Layers with parameters defined by constants like m.dense*, aswell as the node numbers of the values of the list q. Dense Layers only update the last axis of a Tensor.
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generated for example by getm())
+
+* **q**: a list of node numbers
+
+
+Returns:
+
+* **g**: the updated grap object
+

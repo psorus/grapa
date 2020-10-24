@@ -1,0 +1,11 @@
+orthoinp
+========
+
+like shuffleinp, but uses an orthogonal matrix instead of shuffle, thus constant, but mixes the inputs in a certain way
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **seed=None**: optional seed

@@ -1,0 +1,19 @@
+norm
+====
+
+Normalises a network on the last axis (using keras BatchNormalization layer), scale decides if there is a learnable multiplicative factor
+
+Arguments:
+
+* **g**: a grap object
+
+* **scale=True**: should the BatchNormalization layer include a scaling factor (disable if infront of your autoencoder)
+
+
+
+Returns:
+
+* **g**: the updated grap object
+
+* **inp**: the model input layer
+

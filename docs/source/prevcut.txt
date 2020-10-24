@@ -1,0 +1,17 @@
+prevcut
+=======
+
+
+cuts in gs, takes only the last ops values
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **ops=4**: returns only the last ops nodes
+
+
+Returns
+
+* **g**: the updated grap value

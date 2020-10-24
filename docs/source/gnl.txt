@@ -1,0 +1,25 @@
+gnl
+===
+
+a function to just add some graph update functionality without relearning the graph, defined by m.graph*. Can use usei to use inverted Graph update layers instead of the normal ones (to make invertibility easier). Also understands alin (iarities) as a vector
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generated for example by getm())
+
+* **alin=[]**: alinearity used, defined in glm
+
+* **iterations=1**: run each graph update step iteration times (one layer)
+
+* **repeat=1**: repeat this function repeat times (multiple layers)
+
+* **usei=False**: use inverse graph update layers
+
+
+
+Returns:
+
+* **g**: the updated grap object
+

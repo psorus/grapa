@@ -1,0 +1,21 @@
+compress
+========
+
+little brother of abstr, the main difference is, that this does not keep any information of the graph, so you have to retrain it, if you want to do graph actions afterwards
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generate for example by getm())
+
+* **c**: the abstraction factor
+
+* **addparam**: add how many new parameters
+
+
+Returns:
+
+* **g**: the updated grap object
+

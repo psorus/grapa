@@ -1,0 +1,28 @@
+ganl
+====
+
+gnl but on more abstract graphs, should probably not be used directly unless you unstand what the difference is
+
+Arguments:
+
+* **A**: an Adjacency Matrix
+
+* **X**: a list of Feature vectors
+
+* **gs**: the node number
+
+* **a**: the abstraction factor
+
+* **param**: how many parameters for each feature vector
+
+* **iterations=1**: run each graph update step iteration times (one layer)
+
+* **alin=[]**: alinearity used, defined in glm
+
+* **usei=False**: use inverse graph update layers
+
+
+Returns:
+
+* **X**: the updated feature object
+

@@ -1,0 +1,19 @@
+gq
+==
+
+function to work with alternative Input format (here Dense Layer on concat(self_values, neigbour_values)), migth be extended to use Convolutions. Defined by m.gq*
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generated for example by getm())
+
+* **steps=4**: how many update steps between after glcreate
+
+
+Returns:
+
+* **g**: the updated grap object
+
+

@@ -1,0 +1,19 @@
+divccll
+=======
+
+easy diverger: diverge by copy
+Best handled by decompress
+
+Arguments:
+
+* **g**: a grap object
+
+* **c**: the abstraction factor
+
+
+
+Returns:
+
+* **g**: the updated grap object
+
+

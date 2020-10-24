@@ -1,0 +1,12 @@
+prep
+====
+
+Runs my standart Input preparation. Probably not useful except for physics
+(create an Input, gpre5 on it and optionally use norm (decided by m.prenorm))
+
+Arguments:
+
+* **g**: a grap object, already containing gs and param in the state object s
+
+* **m**: a constant object (generated for example by getm())
+

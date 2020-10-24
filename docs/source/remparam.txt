@@ -1,0 +1,17 @@
+remparam
+========
+
+just a simple function to remove overdue parameters
+
+Arguments:
+
+* **g**: a grap object
+
+* **nparam**: output parameter number
+
+
+Returns:
+
+* **g**: the updated grap object
+
+

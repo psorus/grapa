@@ -119,8 +119,6 @@ def multidense(g,m,q):
   return g
 
 
-
-
 def norm(g,scale=True):
   """normalises a network on the last axis, scale decides if there is a learnable multiplicative factor"""
   g.X=BatchNormalization(axis=-1,scale=scale)(g.X)
@@ -421,6 +419,7 @@ def sortparam(g,m):
   g.X=gssort(gs=g.s.gs,param=g.s.param,index=m.sortindex)([g.X])
   g.A=None
   return g 
+
 
 
 def subedge(inp,param,m):

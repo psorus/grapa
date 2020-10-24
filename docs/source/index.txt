@@ -92,6 +92,42 @@ Contents:
    fnorm
    fprep
 
+   multidense
+   norm
+   prep
+   gq
+   gaq
+   gnl
+   learngraph
+   gll
+   ganl
+   abstr
+   compress
+   graphatbottleneck
+   denseladder
+   divtriv
+   divccll
+   divpar
+   divcla
+   divcla2
+   divgra
+   remparam
+   handlereturn
+   sortparam
+   subedge
+   edgeconv
+   ge
+   shuffleinp
+   orthoinp
+   perminp
+   pnorm
+   prevcut
+   goparam
+   decompress
+
+
+
+
 
     
 
