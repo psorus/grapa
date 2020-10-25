@@ -1,6 +1,8 @@
-mol
-===
+Faster regression on molecular data
+===================================
 
-QQQ
+This Tutorial is written in google colab, and you can find it here <https://colab.research.google.com/drive/1FlXt4NJnqQqBJHqN-cp9KV00ulBwJ_SV?usp=sharing>
+
+
 
 

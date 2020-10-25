@@ -1,6 +1,9 @@
-Nets
-====
+Finding unused accounts in a social Network
+===========================================
 
-QQQ
+This tutorial works on a simple generated social network, in which we try to find accounts used much less than other ones
+This it written in google colab, and you can find it here <https://colab.research.google.com/drive/1t7is62gnfga_tzI79wiLTVdbgOt87zwU?usp=sharing>
+
+
 
 

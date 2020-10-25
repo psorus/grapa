@@ -11,6 +11,7 @@ Contents:
    gadd1
    gaddbias
    gaddzeros
+   gaddparam
    gbrokengrowth
    gbuilder
    gchooseparam
@@ -101,10 +102,4 @@ Contents:
 
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 

@@ -3,5 +3,5 @@ Top Tagging
 
 This module is based on a master thesis about top tagging. So our first application is simply this.
 
-
+This tutorial is not yet finalised, but can be found here <https://colab.research.google.com/drive/1ENMFjLMXok2AePs0QTHF-4rmzUfab6Ub?usp=sharing> later
 
