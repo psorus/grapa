@@ -7290,6 +7290,93 @@ class gcomparamlevel(Layer):#takes a (?,gs,c,param) and converts it into (?,c*gs
 
 
 
+import numpy as np
+import math
+import sys
+
+from tensorflow.keras import backend as K
+from tensorflow.keras.layers import Layer,Dense, Activation
+import tensorflow.keras as keras# as k
+import tensorflow as t
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.optimizers import Adam,SGD
+from tensorflow.linalg import trace
+
+
+
+
+
+#batch_size=100
+#epochs=1000
+#verbose=2
+#lr=0.001
+
+class gaddparam(Layer):
+  def __init__(self,gs=30,param=20,free=0,**kwargs):
+
+    self.gs=gs
+    self.param=param
+    self.free=free
+
+
+    #print(kwargs)
+    #print((gs,param))
+    #exit()
+
+    super(gaddparam,self).__init__(input_shape=(gs,param))
+
+  def get_config(self):
+    mi={"gs":self.gs,"param":self.param,"free":self.free}
+    th=super(gaddparam,self).get_config()
+    th.update(mi)
+    return th
+  def from_config(config):
+    return gaddparam(**config)
+
+  def build(self, input_shape):
+
+
+    self.built=True
+
+
+  def call(self,x):
+    x=x[0]
+
+    #print("!x",x.shape)
+
+    gs=self.gs
+    param=self.param
+
+
+    if self.free<=0:return rel,x
+    zero1=K.zeros_like(x[:,:,0])
+    zero1=K.reshape(zero1,(-1,x.shape[1],1))
+    #print("!",zero1.shape)
+    zerolis=[]
+    for i in range(self.free):
+      zerolis.append(zero1)
+    zeros=K.concatenate(zerolis,axis=-1)
+    #print(zeros.shape)
+
+    return K.concatenate((x,zeros),axis=-1)
+
+
+
+
+
+
+
+
+  def compute_output_shape(self,input_shape):
+    shape=list(input_shape[0])
+    #print("inputting",shape,"gs=",self.gs,"sp=",self.param)
+    assert len(shape)==3
+    assert shape[-1]==self.param
+    assert shape[-2]==self.gs
+
+    a1=tuple([shape[0],self.gs,self.param+self.free])
+
+    return a1
 
 
 

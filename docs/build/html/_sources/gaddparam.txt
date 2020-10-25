@@ -1,0 +1,16 @@
+gaddparam
+=========
+
+Adds entry parameters to each feature vector. Like gtopk without the graph learning
+
+
+Arguments
+
+* **gs**: The gs Number of Nodes of the Graph (Graph Size)
+
+* **param**: The Number of Features for each node in the Feature Vector
+
+* **free=0**: Add this many parameters
+
+
+
