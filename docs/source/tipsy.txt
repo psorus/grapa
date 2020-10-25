@@ -1,7 +1,7 @@
 Generating recipes using grapa and a gan
 ========================================
 
-This Tutorial is written in google colab, and you can find it here <https://colab.research.google.com/drive/1k_rtfaJRCX06kIHzkzQ7Dnr6QR5k45jx?usp=sharing>
+This Tutorial is written in google colab, and you can find it here https://colab.research.google.com/drive/1k_rtfaJRCX06kIHzkzQ7Dnr6QR5k45jx?usp=sharing
 
 This tutorial is not yet completely done. Also we work on drink recipes to make the recipes easier
 
