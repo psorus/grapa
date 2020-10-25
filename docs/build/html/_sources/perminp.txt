@@ -1,0 +1,13 @@
+perminp
+=======
+
+like orthoinp, but uses an permutation matrix instead of an orthogonal one. migth require some improvements in gperm.py before it becomes truly useful
+
+
+Arguments:
+
+* **g**: a grap object
+
+Returns
+
+* **g**: the updated grap value

@@ -1,0 +1,42 @@
+handlereturn
+============
+
+a nice function to simplify returning values for createbothmodels. Also has some simple size consistency checks
+  the variables:
+
+Arguments:
+
+* **inn1**: initial input Variable
+
+* **raw**: preconverted input Variable, for comparison sake
+
+* **com**: compressed Variable
+
+* **inn2**: input for decoder
+
+* **decom**: decompressed decoder Variable
+
+* **shallvae**: shall you thread this like a variational auto encoder? hier just a bodge of an solution
+
+
+
+
+
+
+Returns:
+
+* **inn1**: the first input
+
+* **raw**: preprocessed value
+
+* **c1**: mean/latent space
+
+* **c2**: variance/latent space
+
+* **shortcuts=[]**: shortcut variable, disabled here
+
+* **inn2**: the decompression input
+
+* **decom**: output value
+
+

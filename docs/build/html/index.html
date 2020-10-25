@@ -26,7 +26,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Grapa 0.1 documentation" href="#" />
-    <link rel="next" title="This should be the title" href="samplefile.html" /> 
+    <link rel="next" title="getting started" href="gettingstarted.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,7 +36,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="samplefile.html" title="This should be the title"
+          <a href="gettingstarted.html" title="getting started"
              accesskey="N">next</a> |</li>
         <li><a href="#">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -50,86 +50,138 @@
   <div class="section" id="grapa-graph-autoencoder-made-easy">
 <h1>Grapa: Graph Autoencoder made easy!<a class="headerlink" href="#grapa-graph-autoencoder-made-easy" title="Permalink to this headline">¶</a></h1>
 <p>A simple python3 library using keras and tensorflow to do Deep Learning on Graphs, with a strong emphasis on Codes that chance the Shape of the Graph in a way that can be used for Autoencoder</p>
+<p>We split our Code into two different Apis: a low level Layer Api, and a high Level Functional Api. We also provide 5 different example Applications to get you started using grapa as fast as possible.</p>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="samplefile.html">This should be the title</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gadd1.html">gadd1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gaddbias.html">gaddbias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gaddzeros.html">gaddzeros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gbrokengrowth.html">gbrokengrowth</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gbuilder.html">glbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gchooseparam.html">gchooseparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdensediverge.html">gcomdensediverge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdensemerge.html">gcomdensemerge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdepoollg.html">gcomdepoollg</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdepoolplus.html">gcomdepoolplus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdepool.html">gcomdepool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdex.html">gcomdex</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomdiagraph.html">gcomdiagraph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomextractdiag.html">gcomextractdiag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomfullyconnected.html">gcomfullyconnected</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgpool.html">gcomgpool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphand2.html">gcomgraphand2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphand.html">gcomgraphand</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphcombinations.html">gcomgraphcombinations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphcutter.html">gcomgraphcutter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphfrom2param.html">gcomgraphfrom2param</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphfromparam.html">gcomgraphfromparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphlevel.html">gcomgraphlevel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomgraphrepeat.html">gcomgraphlevel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomjpool.html">gcomjpool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomparamcombinations.html">gcomparamcombinations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomparamlevel.html">gcomparamlevel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomparastract.html">gcomparastract</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcompoolmerge.html">gcompoolmerge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcompool.html">gcompool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcomreopool.html">gcomreopool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcutparam.html">gcutparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gcutter.html">gcutter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gecutter.html">gecutter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gfeatkeep.html">gfeatkeep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gfeat.html">gfeat</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gfromparam.html">gfromparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ggoparam.html">ggoparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ggraphstract.html">ggraphstract</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ghealparam.html">ghealparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gkeepbuilder.html">gkeepbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gkeepcutter.html">gkeepcutter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gkeepmatcut.html">gkeepmatcut</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glacreate.html">glacreate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glam.html">glam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glacreate.html">glacreate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gliam.html">gliam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glim.html">glim</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glkeep.html">glkeep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glmlp.html">glmlp</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glm.html">glm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="glom.html">glom</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gl.html">gl</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gltknd.html">gltknd</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gltk.html">gltk</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gltrivmlp.html">gltrivmlp</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gmake1graph.html">gmake1graph</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gmultiply.html">gmultiply</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gortho.html">gortho</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpartinorm.html">gpartinorm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gperm.html">gperm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpoolgrowth.html">gpoolgrowth</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpool.html">gpool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpre1.html">gpre1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpre2.html">gpre2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpre3.html">gpre3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpre4.html">gpre4</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gpre5.html">gpre5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gremoveparam.html">gremoveparam</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gshuffle.html">gshuffle</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gssort.html">gssort</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gsym.html">gsym</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gtbuilder.html">gtbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gtlbuilder.html">gtlbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gtopk.html">gtopk</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gvaluation.html">gvaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="toptagging.html">Top Tagging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nets.html">Nets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mol.html">mol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feyn.html">feyn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tipsy.html">tipsy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layerapi.html">Layer Api</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gadd1.html">gadd1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaddbias.html">gaddbias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaddzeros.html">gaddzeros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbrokengrowth.html">gbrokengrowth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gbuilder.html">glbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gchooseparam.html">gchooseparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdensediverge.html">gcomdensediverge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdensemerge.html">gcomdensemerge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdepoollg.html">gcomdepoollg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdepoolplus.html">gcomdepoolplus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdepool.html">gcomdepool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdex.html">gcomdex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomdiagraph.html">gcomdiagraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomextractdiag.html">gcomextractdiag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomfullyconnected.html">gcomfullyconnected</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgpool.html">gcomgpool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphand2.html">gcomgraphand2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphand.html">gcomgraphand</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphcombinations.html">gcomgraphcombinations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphcutter.html">gcomgraphcutter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphfrom2param.html">gcomgraphfrom2param</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphfromparam.html">gcomgraphfromparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphlevel.html">gcomgraphlevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomgraphrepeat.html">gcomgraphlevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomjpool.html">gcomjpool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomparamcombinations.html">gcomparamcombinations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomparamlevel.html">gcomparamlevel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomparastract.html">gcomparastract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcompoolmerge.html">gcompoolmerge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcompool.html">gcompool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcomreopool.html">gcomreopool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcutparam.html">gcutparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gcutter.html">gcutter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gecutter.html">gecutter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfeatkeep.html">gfeatkeep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfeat.html">gfeat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gfromparam.html">gfromparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggoparam.html">ggoparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ggraphstract.html">ggraphstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ghealparam.html">ghealparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gkeepbuilder.html">gkeepbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gkeepcutter.html">gkeepcutter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gkeepmatcut.html">gkeepmatcut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glacreate.html">glacreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glam.html">glam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glacreate.html">glacreate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gliam.html">gliam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glim.html">glim</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glkeep.html">glkeep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glmlp.html">glmlp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glm.html">glm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glom.html">glom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gl.html">gl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gltknd.html">gltknd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gltk.html">gltk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gltrivmlp.html">gltrivmlp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gmake1graph.html">gmake1graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gmultiply.html">gmultiply</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gortho.html">gortho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpartinorm.html">gpartinorm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gperm.html">gperm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpoolgrowth.html">gpoolgrowth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpool.html">gpool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpre1.html">gpre1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpre2.html">gpre2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpre3.html">gpre3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpre4.html">gpre4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gpre5.html">gpre5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gremoveparam.html">gremoveparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gshuffle.html">gshuffle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gssort.html">gssort</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gsym.html">gsym</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gtbuilder.html">gtbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gtlbuilder.html">gtlbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gtopk.html">gtopk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gvaluation.html">gvaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fmultidense.html">multidense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fnorm.html">norm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fprep.html">prep</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="layerapi.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionalapi.html">Functional Api</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="multidense.html">multidense</a></li>
+<li class="toctree-l2"><a class="reference internal" href="norm.html">norm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prep.html">prep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gq.html">gq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaq.html">gaq</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gnl.html">gnl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="learngraph.html">learngraph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gll.html">gll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ganl.html">ganl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="abstr.html">abstr</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compress.html">compress</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graphatbottleneck.html">graphatbottleneck</a></li>
+<li class="toctree-l2"><a class="reference internal" href="denseladder.html">denseladder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="divtriv.html">divtriv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="divccll.html">divccll</a></li>
+<li class="toctree-l2"><a class="reference internal" href="divpar.html">divpar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="divcla.html">divcla</a></li>
+<li class="toctree-l2"><a class="reference internal" href="divcla2.html">divcla2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="divgra.html">divgra</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remparam.html">remparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handlereturn.html">handlereturn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sortparam.html">sortparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="subedge.html">subedge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edgeconv.html">edgeconv</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ge.html">ge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="shuffleinp.html">shuffleinp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orthoinp.html">orthoinp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="perminp.html">perminp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pnorm.html">pnorm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="prevcut.html">prevcut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="goparam.html">goparam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="decompress.html">decompress</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functionalapi.html#indices-and-tables">Indices and tables</a></li>
 </ul>
 </div>
 </div>
@@ -157,8 +209,8 @@
 </ul>
 
   <h4>Next topic</h4>
-  <p class="topless"><a href="samplefile.html"
-                        title="next chapter">This should be the title</a></p>
+  <p class="topless"><a href="gettingstarted.html"
+                        title="next chapter">getting started</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/index.txt"
@@ -188,7 +240,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="samplefile.html" title="This should be the title"
+          <a href="gettingstarted.html" title="getting started"
              >next</a> |</li>
         <li><a href="#">Grapa 0.1 documentation</a> &raquo;</li> 
       </ul>

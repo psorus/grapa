@@ -1,0 +1,18 @@
+prep
+====
+
+Runs my standart preparation on an Input which it defines itself and also returns this Input
+
+Arguments
+
+* **g**: A grap Class containing an Adjacency Matrix and a Feature vector, as well as a state Class containing the current standart Values for gs(=Graph Size, Number of Nodes in the Graph) and param (=Parameter Count, Number of Features for each Node)
+
+* **m**: The Constants defining the Function Behaviours (matching Parameters below)
+
+
+Constants defined in m
+
+* **prenorm=False**: Should each Feature be normalised (using norm with scale=False) after preperation
+
+
+

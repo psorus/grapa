@@ -28,11 +28,11 @@ class gpool(Layer):
   def call(self,x):
     x=x[0]
     if self.mode=="max":
-      return K.max(x,axis=-1)
+      return K.max(x,axis=1)
     if self.mode=="mean":
-      return K.mean(x,axis=-1)
+      return K.mean(x,axis=1)
     if self.mode=="sum":
-      return K.sum(x,axis=-1)
+      return K.sum(x,axis=1)
 
     
 

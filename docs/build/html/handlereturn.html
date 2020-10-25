@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>handlereturn &mdash; Grapa 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Grapa 0.1 documentation" href="index.html" />
+    <link rel="next" title="sortparam" href="sortparam.html" />
+    <link rel="prev" title="remparam" href="remparam.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sortparam.html" title="sortparam"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="remparam.html" title="remparam"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="handlereturn">
+<h1>handlereturn<a class="headerlink" href="#handlereturn" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>a nice function to simplify returning values for createbothmodels. Also has some simple size consistency checks</dt>
+<dd>the variables:</dd>
+</dl>
+<p>Arguments:</p>
+<ul class="simple">
+<li><strong>inn1</strong>: initial input Variable</li>
+<li><strong>raw</strong>: preconverted input Variable, for comparison sake</li>
+<li><strong>com</strong>: compressed Variable</li>
+<li><strong>inn2</strong>: input for decoder</li>
+<li><strong>decom</strong>: decompressed decoder Variable</li>
+<li><strong>shallvae</strong>: shall you thread this like a variational auto encoder? hier just a bodge of an solution</li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><strong>inn1</strong>: the first input</li>
+<li><strong>raw</strong>: preprocessed value</li>
+<li><strong>c1</strong>: mean/latent space</li>
+<li><strong>c2</strong>: variance/latent space</li>
+<li><strong>shortcuts=[]</strong>: shortcut variable, disabled here</li>
+<li><strong>inn2</strong>: the decompression input</li>
+<li><strong>decom</strong>: output value</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="remparam.html"
+                        title="previous chapter">remparam</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sortparam.html"
+                        title="next chapter">sortparam</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/handlereturn.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sortparam.html" title="sortparam"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="remparam.html" title="remparam"
+             >previous</a> |</li>
+        <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2020, Simon Klüttermann.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+pnorm
+=====
+
+runs a normation on each particle and feature, ignoring the first one
+ignores the first variable. and the normation is defined in gpartinorm
+
+Arguments:
+
+* **g**: a grap object
+
+Returns
+
+* **g**: the updated grap value

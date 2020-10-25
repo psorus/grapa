@@ -1,0 +1,17 @@
+subedge
+=======
+
+one particlenet like update step, uses m.edge*
+
+
+Arguments:
+
+* **inp**: input variable
+
+* **param**: number of parameters
+
+* **m**: constant variable, created for example by getm()
+
+Returns
+
+* **feat3**: an updated feature vector

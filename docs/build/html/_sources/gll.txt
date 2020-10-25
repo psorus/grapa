@@ -1,0 +1,25 @@
+gll
+===
+
+gnl + learngraph
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant object (generated for example by getm())
+
+* **free**: add how many free parameters to each feature vector
+
+* **alin=[]**: alinearity used, defined in glm
+
+* **iterations=1**: run each graph update step iteration times (one layer)
+
+* **repeat=1**: repeat this function repeat times (multiple learnings)
+
+* **subrepeat=1**: repeat the gnl function this many times (multiple layers)
+
+* **usei=False**: use inverse graph update layers
+
+* **k=4**: the k in the topK algorithm

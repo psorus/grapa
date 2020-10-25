@@ -1,0 +1,34 @@
+getting started
+===============
+
+We show you 5 different Applications, that should make it easy to work with grapa for everything you migth want to use it for
+
+
+Contents:
+
+.. toctree::
+
+  toptagging
+  nets
+  mol
+  feyn
+  tipsy
+
+
+
+
+    
+
+
+
+
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

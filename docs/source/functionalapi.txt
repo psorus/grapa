@@ -1,0 +1,62 @@
+Functional Api
+==============
+
+The Functional Api is less powerful than the Layer Api, but also easier to handle. And since some functions are really complicated, using the Functional Api as much as possible is usually recommended.
+
+
+Contents:
+
+.. toctree::
+
+   multidense
+   norm
+   prep
+   gq
+   gaq
+   gnl
+   learngraph
+   gll
+   ganl
+   abstr
+   compress
+   graphatbottleneck
+   denseladder
+   divtriv
+   divccll
+   divpar
+   divcla
+   divcla2
+   divgra
+   remparam
+   handlereturn
+   sortparam
+   subedge
+   edgeconv
+   ge
+   shuffleinp
+   orthoinp
+   perminp
+   pnorm
+   prevcut
+   goparam
+   decompress
+
+
+
+
+
+    
+
+
+
+
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

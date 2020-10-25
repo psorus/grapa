@@ -108,7 +108,7 @@ def ganl(A,X,gs,a,param,m,iterations=1,alin=[],usei=False):
     ag.A=A
     ag=gaq(ag,m,a=a,steps=m.complexasteps)
     return ag.X
-def abstr(g,c,alin=[],iterations=1,repeat=1,multiglam=1,pmode="max",gmode="mean"):
+def abstr(g,m,c,alin=[],iterations=1,repeat=1,multiglam=1,pmode="max",gmode="mean"):
   """uses (multiglam) glam to abstract a graph into a factor c smaller graph
   uses pooling to go from c size subgraphs to 1 size dots
   does not chance param at all
@@ -118,7 +118,7 @@ def abstr(g,c,alin=[],iterations=1,repeat=1,multiglam=1,pmode="max",gmode="mean"
   graphs=gcomdiagraph(gs=g.s.gs,c=c)([graph])#diagonal graphs
   feats1=gcomparastract(gs=g.s.gs,param=g.s.param,c=c)([feat1])#abstract 3d parameters into 4d ones
   g.s.gs=int(g.s.gs/c)
-  for i in range(multiglam):feats1=ganl(graphs,feats1,gs=c,a=g.s.gs,param=g.s.param,iterations=iterations,alin=alin)#run sub graph actions
+  for i in range(multiglam):feats1=ganl(graphs,feats1,m=m,gs=c,a=g.s.gs,param=g.s.param,iterations=iterations,alin=alin)#run sub graph actions
   feat1=gcompoolmerge(gs=g.s.gs,ags=c,param=g.s.param,mode=pmode)([feats1])  
   graph=gcomgraphcutter(gs=g.s.gs*c,c=c,mode=gmode,cut=cut,c_const=c_const)([graph])#goes from big graph to small graph
   g.A=graph
@@ -211,7 +211,7 @@ def divccll(g,c):
 
 
 
-def divpar(g,c,usei=False,alin=[],iterations=1,repeat=1,multiglam=1,amode2="prod"):
+def divpar(g,c,usei=False,alin=[],iterations=1,repeat=1,multiglam=1,amode2="prod",m=None):
   """A parameter like graph diverger by a factor of c (also does not chance param at all)"""
 
   #print("par on",g.A,g.X,g.s.gs,g.s.param,c)
@@ -231,7 +231,7 @@ def divpar(g,c,usei=False,alin=[],iterations=1,repeat=1,multiglam=1,amode2="prod
   #  for i in range(multiglam):taef1s=gliam(gs=c,param=g.s.param,a=g.s.gs,alinearity=alin,iterations=iterations)([parkd,taef1s])#does the subnode graph actions
   #else: 
   #  for i in range(multiglam):taef1s=glam(gs=c,param=g.s.param,a=g.s.gs,alinearity=alin,iterations=iterations)([parkd,taef1s])#does the subnode graph actions
-  for i in range(multiglam):taef1s=ganl(parkd,taef1s,gs=c,param=g.s.param,a=g.s.gs,alin=alin,iterations=iterations,usei=usei)
+  for i in range(multiglam):taef1s=ganl(parkd,taef1s,gs=c,param=g.s.param,a=g.s.gs,alin=alin,iterations=iterations,usei=usei,m=m)
 
   taef2=gcomparamlevel(gs=g.s.gs,c=c,param=g.s.param)([taef1s])
   g.s.gs*=c
@@ -307,15 +307,17 @@ def handlereturn(inn1,raw,com,inn2,decom,shallvae):
 
 
   
-  if not int(inn1.shape[-1])==4:
-    print("returning failed at input1 shape",inn1.shape)
-    assert False
+ # if not int(inn1.shape[-1])==4:
+ #   print("returning failed at input1 shape",inn1.shape)
+ #   assert False
   if not int(raw.shape[-1])==int(decom.shape[-1]):
     print("returning failed at comparison shape comparison(1) of",raw.shape,"and",decom.shape)
     assert False
   if len(raw.shape)>2:
     if not int(raw.shape[-2])==int(decom.shape[-2]):
       print("returning failed at comparison shape comparison(2) of",raw.shape,"and",decom.shape)
+      print(raw.shape,decom.shape)
+      exit()
       assert False
   if not int(com.shape[-1])==int(inn2.shape[-1]):
     print("returning failed at compression shape comparison of",com.shape,"and",inn2.shape)

@@ -1,0 +1,21 @@
+divcla2
+=======
+
+even more simple divcla, the main difference is, that this ignores graphs completely
+Best handled by decompress
+
+Arguments:
+
+* **g**: a grap object
+
+* **c**: the abstraction factor
+
+* **m**: a constant, defined for example by getm()
+
+* **repeat=1**: repeat this layer repeat time (multiple divergences)
+
+
+Returns:
+
+* **g**: the updated grap object
+

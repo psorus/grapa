@@ -1,0 +1,18 @@
+sortparam
+=========
+
+
+sorts X by one of its parameters (m.sortindex), just removes the graph
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: constant variable, created for example by getm()
+
+Returns
+
+* **g**: the updated grap value
+
+

@@ -1,0 +1,20 @@
+edgeconv
+========
+
+one set of particlenet like update steps, thus use m.edge* like subedge. also similar to gq (here the main difference is the dense vs convolutional structure
+
+Arguments:
+
+* **inp**: input variable
+
+* **gs**: node number
+
+* **k**: the k in topK
+
+* **param**: number of parameters
+
+* **m**: constant variable, created for example by getm()
+
+Returns
+
+* **outp**: the updated feature vector

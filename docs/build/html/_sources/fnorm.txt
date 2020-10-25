@@ -1,0 +1,11 @@
+norm
+====
+
+Normalises a network on the last axis, scale decides if there is a learnable multiplicative factor
+
+Arguments
+
+* **g**: A grap Class containing an Adjacency Matrix and a Feature vector, as well as a state Class containing the current standart Values for gs(=Graph Size, Number of Nodes in the Graph) and param (=Parameter Count, Number of Features for each Node)
+
+* **scale=True**: Weather the output of the BatchNormalisationLayer has a learnable scaling Factor. Can be useful to disable this in special Situations, for example, when working in front of an Autoencoder
+

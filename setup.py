@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="psorus",
-    version="0.2",
+    name="grapatf",
+    version="0.5",
     author="Simon Klüttermann",
     author_email="Simon.Kluettermann@gmx.de",
     description="A Graph Autoencoder Library for Tensorflow and Keras",
@@ -24,6 +24,6 @@ setuptools.setup(
 	'keras',
 	'numpy',
       ],
-    download_url='https://github.com/psorus/grapa/archive/0.2.tar.gz',
+    download_url='https://github.com/psorus/grapa/archive/0.5.tar.gz',
     
 )  

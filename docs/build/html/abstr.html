@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>abstr &mdash; Grapa 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Grapa 0.1 documentation" href="index.html" />
+    <link rel="next" title="compress" href="compress.html" />
+    <link rel="prev" title="ganl" href="ganl.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="compress.html" title="compress"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ganl.html" title="ganl"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="abstr">
+<h1>abstr<a class="headerlink" href="#abstr" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>uses (multiglam) glam to abstract a graph into a factor c smaller graph</dt>
+<dd><dl class="first last docutils">
+<dt>uses pooling to go from c size subgraphs to 1 size dots</dt>
+<dd><dl class="first last docutils">
+<dt>does not chance param at all</dt>
+<dd><dl class="first last docutils">
+<dt>uses (pmode) param pooling mode</dt>
+<dd>uses (gmode) graph pooling mode</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Arguments:</p>
+<ul class="simple">
+<li><strong>g</strong>: a grap object</li>
+<li><strong>c</strong>: the abstraction factor</li>
+<li><strong>alin=[]</strong>: alinearity used, defined in glm</li>
+<li><strong>iterations=1</strong>: run each abstracted graph update step iteration times (one layer)</li>
+<li><strong>repeat=1</strong>: repeat this function repeat times (multiple abstractions)</li>
+<li><strong>multiglam=1</strong>: repeat the graph updatedd function this many times (multiple layers)</li>
+<li><strong>pmode=&#8221;max&#8221;</strong>: how to merge feature vectors. Options defined in gcompoolmerge</li>
+<li><a href="#id1"><span class="problematic" id="id2">**</span></a>gmode=&#8221;mean&#8221;: how to merge the adjacency matrix. Options defined in gcomgraphcutter</li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><strong>g</strong>: the updated grap object</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ganl.html"
+                        title="previous chapter">ganl</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="compress.html"
+                        title="next chapter">compress</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/abstr.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="compress.html" title="compress"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ganl.html" title="ganl"
+             >previous</a> |</li>
+        <li><a href="index.html">Grapa 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2020, Simon Klüttermann.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

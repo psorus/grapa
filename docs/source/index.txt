@@ -3,128 +3,16 @@ Grapa: Graph Autoencoder made easy!
 
 A simple python3 library using keras and tensorflow to do Deep Learning on Graphs, with a strong emphasis on Codes that chance the Shape of the Graph in a way that can be used for Autoencoder
 
+We split our Code into two different Apis: a low level Layer Api, and a high Level Functional Api. We also provide 5 different example Applications to get you started using grapa as fast as possible.
+
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
 
-   samplefile
-
-   gadd1
-   gaddbias
-   gaddzeros
-   gbrokengrowth
-   gbuilder
-   gchooseparam
-   gcomdensediverge
-   gcomdensemerge
-   gcomdepoollg
-   gcomdepoolplus   
-   gcomdepool
-   gcomdex
-   gcomdiagraph
-   gcomextractdiag
-   gcomfullyconnected
-   gcomgpool
-   gcomgraphand2
-   gcomgraphand
-   gcomgraphcombinations
-   gcomgraphcutter
-   gcomgraphfrom2param
-   gcomgraphfromparam
-   gcomgraphlevel
-   gcomgraphrepeat
-   gcomjpool
-   gcomparamcombinations
-   gcomparamlevel
-   gcomparastract   
-   gcompoolmerge
-   gcompool
-   gcomreopool
-   gcutparam
-   gcutter
-   gecutter
-   gfeatkeep 
-   gfeat
-   gfromparam
-   ggoparam
-   ggraphstract
-   ghealparam
-   gkeepbuilder
-   gkeepcutter    
-   gkeepmatcut
-   glacreate
-   glam
-   glbuilder
-   glacreate
-   gliam
-   glim
-   glkeep
-   glmlp
-   glm
-   glom
-   gl
-   gltknd  
-   gltk
-   gltrivmlp
-   gmake1graph
-   gmultiply
-   gortho
-   gpartinorm
-   gperm
-   gpoolgrowth
-   gpool
-   gpre1
-   gpre2
-   gpre3
-   gpre4
-   gpre5
-   gremoveparam
-   gshuffle
-   gssort
-   gsym
-   gtbuilder
-   gtlbuilder
-   gtopk     
-   gvaluation 
-   fmultidense
-   fnorm
-   fprep
-
-   multidense
-   norm
-   prep
-   gq
-   gaq
-   gnl
-   learngraph
-   gll
-   ganl
-   abstr
-   compress
-   graphatbottleneck
-   denseladder
-   divtriv
-   divccll
-   divpar
-   divcla
-   divcla2
-   divgra
-   remparam
-   handlereturn
-   sortparam
-   subedge
-   edgeconv
-   ge
-   shuffleinp
-   orthoinp
-   perminp
-   pnorm
-   prevcut
-   goparam
-   decompress
-
+  gettingstarted
+  layerapi
+  functionalapi
 
 
 

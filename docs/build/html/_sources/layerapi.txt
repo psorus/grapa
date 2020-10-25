@@ -1,0 +1,110 @@
+Layer Api
+=========
+
+The Layer Api contains many low level layers. This means that you can do much more than using the Functional Api, but whatever you do, migth be easier achieved by the Functional Api.
+
+
+Contents:
+
+.. toctree::
+
+   gadd1
+   gaddbias
+   gaddzeros
+   gbrokengrowth
+   gbuilder
+   gchooseparam
+   gcomdensediverge
+   gcomdensemerge
+   gcomdepoollg
+   gcomdepoolplus   
+   gcomdepool
+   gcomdex
+   gcomdiagraph
+   gcomextractdiag
+   gcomfullyconnected
+   gcomgpool
+   gcomgraphand2
+   gcomgraphand
+   gcomgraphcombinations
+   gcomgraphcutter
+   gcomgraphfrom2param
+   gcomgraphfromparam
+   gcomgraphlevel
+   gcomgraphrepeat
+   gcomjpool
+   gcomparamcombinations
+   gcomparamlevel
+   gcomparastract   
+   gcompoolmerge
+   gcompool
+   gcomreopool
+   gcutparam
+   gcutter
+   gecutter
+   gfeatkeep 
+   gfeat
+   gfromparam
+   ggoparam
+   ggraphstract
+   ghealparam
+   gkeepbuilder
+   gkeepcutter    
+   gkeepmatcut
+   glacreate
+   glam
+   glbuilder
+   glacreate
+   gliam
+   glim
+   glkeep
+   glmlp
+   glm
+   glom
+   gl
+   gltknd  
+   gltk
+   gltrivmlp
+   gmake1graph
+   gmultiply
+   gortho
+   gpartinorm
+   gperm
+   gpoolgrowth
+   gpool
+   gpre1
+   gpre2
+   gpre3
+   gpre4
+   gpre5
+   gremoveparam
+   gshuffle
+   gssort
+   gsym
+   gtbuilder
+   gtlbuilder
+   gtopk     
+   gvaluation 
+   fmultidense
+   fnorm
+   fprep
+
+
+
+
+
+    
+
+
+
+
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

@@ -1,0 +1,20 @@
+denseladder
+===========
+
+helper function that generates a list of Dense sizes going from 1 to c in n steps (excluding 1 and c), c can be a list, than returns a list of lists
+
+
+Arguments:
+
+* **c**: how many nodes should be the final node number. if is a list, repeats this layer for each value and returns then a list of lists
+
+* **n=3**: how many steps to take
+
+* **truestart=False**: start with 1?
+
+
+Returns:
+
+* **l**: a list of integers
+
+

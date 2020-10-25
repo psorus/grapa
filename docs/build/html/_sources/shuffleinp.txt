@@ -1,0 +1,16 @@
+shuffleinp
+==========
+
+shuffles the inputs, cross particle...sadly does not keep the shuffle constant
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **seed=None**: optional seed
+
+
+Returns
+
+* **g**: the updated grap value

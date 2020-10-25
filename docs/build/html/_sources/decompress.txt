@@ -1,0 +1,22 @@
+decompress
+==========
+
+function to run diverge algorithms on the input. You can choose the diverge algorithm with m.decompress (trivial, paramlike,graphlike,classic,classiclg,ccll), c can be a list (multiple divergences) and also handles the bottleneck actions (define a new input, and return it later). Always returns: g,compressed version,new input
+
+Arguments:
+
+* **g**: a grap object
+
+* **m**: a constant variable. created for example by getm()
+
+* **c**: the abstraction factor
+
+
+Returns
+
+* **g**: the decompressed grap value
+
+* **com**: latent space vector
+
+* **inn2**: input for the decompressor
+

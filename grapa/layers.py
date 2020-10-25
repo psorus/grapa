@@ -11,7 +11,9 @@ from tensorflow.python.ops import array_ops
 from tensorflow.keras.layers import Layer,Dense,Activation
 from tensorflow.keras.layers import BatchNormalization as BatchNorm
 import sys
-def R(self,x,c_const=1000.0,cut=0.5):
+def R(x,c_const=1000.0,cut=0.5):
+  return K.sigmoid(50*(x-cut))
+
   return K.relu(c_const*(x-cut)+1)-K.relu(c_const*(x-c_const))
 def doand(x,mode="prod",c_const=1000.0,cut=0.5):
   if mode=="and":
@@ -30,23 +32,45 @@ def kron(mat1, mat2):
   m2, n2 = mat2.get_shape().as_list()
   mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
   return array_ops.reshape(mat1_rsh * mat2_rsh, [m1 * m2, n1 * n2])
+
+def kron(mat1, mat2):
+  """Computes the Kronecker product two matrices."""
+  m1, n1 = mat1.get_shape().as_list()
+  mat1_rsh = array_ops.reshape(mat1, [m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()
+  mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [m1 * m2, n1 * n2])
 def kron_b1(mat1, mat2):
   """Computes the Kronecker product two matrices, assuming batchdim(mat1)=1."""
   m1, n1 = mat1.get_shape().as_list()[1:]
   mat1_rsh = array_ops.reshape(mat1, [-1,m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()
+  mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
   return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,m1 * m2, n1 * n2])
 def kron_b2(mat1, mat2):
   """Computes the Kronecker product two matrices, assuming batchdim(mat2)=1."""
+  m1, n1 = mat1.get_shape().as_list()
+  mat1_rsh = array_ops.reshape(mat1, [m1, 1, n1, 1])
   m2, n2 = mat2.get_shape().as_list()[1:]
   mat2_rsh = array_ops.reshape(mat2, [-1,1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,m1 * m2, n1 * n2])
 def kron_bb(mat1, mat2):
   """Computes the Kronecker product two matrices, assuming batchdim(mat1/2)=1."""
+  m1, n1 = mat1.get_shape().as_list()[1:]
   mat1_rsh = array_ops.reshape(mat1, [-1, m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()[1:]
   mat2_rsh = array_ops.reshape(mat2, [-1, 1, m2, 1, n2])
+  return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,m1 * m2, n1 * n2])
 def kron_b1fx1(mat1, mat2):
+  """Computes the Kronecker product two matrices, assuming batchdim(mat1)=1."""
   f1, m1, n1 = mat1.get_shape().as_list()[1:]
   mat1_rsh = array_ops.reshape(mat1, [-1,f1,m1, 1, n1, 1])
+  m2, n2 = mat2.get_shape().as_list()
+  mat2_rsh = array_ops.reshape(mat2, [1, m2, 1, n2])
   return array_ops.reshape(mat1_rsh * mat2_rsh, [-1,f1,m1 * m2, n1 * n2])
+
+
+
 def perm_init(shape,dtype=None):
   #works only for 16x16
   data=np.zeros((16,16))
@@ -6895,11 +6919,11 @@ class gpool(Layer):
   def call(self,x):
     x=x[0]
     if self.mode=="max":
-      return K.max(x,axis=-1)
+      return K.max(x,axis=1)
     if self.mode=="mean":
-      return K.mean(x,axis=-1)
+      return K.mean(x,axis=1)
     if self.mode=="sum":
-      return K.sum(x,axis=-1)
+      return K.sum(x,axis=1)
 
     
 

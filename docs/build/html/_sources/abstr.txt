@@ -1,0 +1,34 @@
+abstr
+=====
+
+uses (multiglam) glam to abstract a graph into a factor c smaller graph
+  uses pooling to go from c size subgraphs to 1 size dots
+    does not chance param at all
+      uses (pmode) param pooling mode
+        uses (gmode) graph pooling mode
+
+
+Arguments:
+
+* **g**: a grap object
+
+* **c**: the abstraction factor
+
+* **alin=[]**: alinearity used, defined in glm
+
+* **iterations=1**: run each abstracted graph update step iteration times (one layer)
+
+* **repeat=1**: repeat this function repeat times (multiple abstractions)
+
+* **multiglam=1**: repeat the graph updatedd function this many times (multiple layers)
+
+* **pmode="max"**: how to merge feature vectors. Options defined in gcompoolmerge
+
+* **gmode="mean": how to merge the adjacency matrix. Options defined in gcomgraphcutter
+
+
+Returns:
+
+* **g**: the updated grap object
+
+
