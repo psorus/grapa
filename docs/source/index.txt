@@ -1,5 +1,5 @@
-Grapa: Graph Autoencoder made easy!
-=================================
+Grapa: Graph Autoencoder for tensorflow
+=======================================
 
 A simple python3 library using keras and tensorflow to do Deep Learning on Graphs, with a strong emphasis on Codes that chance the Shape of the Graph in a way that can be used for Autoencoder
 
