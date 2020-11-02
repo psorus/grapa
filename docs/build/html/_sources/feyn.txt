@@ -1,6 +1,6 @@
 Anomaly Detection on Feynman Diagramms
 ======================================
 
-This Tutorial is written in google colab, and you can find it here <https://colab.research.google.com/drive/1ujfDPspzOHJlsY6j4N43hrhDbV-BfTow?usp=sharing>
+This Tutorial is written in google colab, and you can find it here https://colab.research.google.com/drive/1ujfDPspzOHJlsY6j4N43hrhDbV-BfTow?usp=sharing
 
 

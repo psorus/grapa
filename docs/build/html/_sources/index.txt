@@ -10,6 +10,7 @@ Contents:
 
 .. toctree::
 
+  thesisdownload
   gettingstarted
   layerapi
   functionalapi

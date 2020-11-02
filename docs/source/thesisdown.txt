@@ -1,0 +1,7 @@
+Download the Thesis this module is based on
+===========================================
+
+As this module is the product of my masters thesis, looking at it migth help you understand some parts of grapa further. You can download my masters thesis at https://git.rwth-aachen.de/mthesis/write/-/raw/master/final/main.pdf?inline=false .
+
+
+
