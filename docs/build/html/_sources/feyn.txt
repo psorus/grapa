@@ -1,6 +1,6 @@
 Anomaly Detection on Feynman Diagramms
 ======================================
 
-This Tutorial is written in google colab, and you can find it here https://colab.research.google.com/drive/1ujfDPspzOHJlsY6j4N43hrhDbV-BfTow?usp=sharing
+This Tutorial serves as an alternative to the social network case. Instead of generating arbitrary data, this tutorial tries to use particle physics as training data. It will also show you how to use more complicated decompression algorithms. It is written in google colab, and you can find it here https://colab.research.google.com/drive/1ujfDPspzOHJlsY6j4N43hrhDbV-BfTow?usp=sharing
 
 

@@ -1,7 +1,7 @@
 Faster regression on molecular data
 ===================================
 
-This Tutorial is written in google colab, and you can find it here https://colab.research.google.com/drive/1FlXt4NJnqQqBJHqN-cp9KV00ulBwJ_SV?usp=sharing
+This Tutorial will teach you about how to use grapa for normal graph classification or regression tasks. It will also show that grapa can help accelarating them. It is written in google colab, and you can find it here https://colab.research.google.com/drive/1FlXt4NJnqQqBJHqN-cp9KV00ulBwJ_SV?usp=sharing
 
 
 

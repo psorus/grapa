@@ -5,6 +5,9 @@ A simple python3 library using keras and tensorflow to do Deep Learning on Graph
 
 We split our Code into two different Apis: a low level Layer Api, and a high Level Functional Api. We also provide 5 different example Applications to get you started using grapa as fast as possible.
 
+::
+
+    pip install grapatf
 
 Contents:
 

@@ -1,4 +1,4 @@
-getting started
+Getting started
 ===============
 
 We show you 5 different Applications, that should make it easy to work with grapa for everything you migth want to use it for

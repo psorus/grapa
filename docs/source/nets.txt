@@ -1,7 +1,7 @@
 Finding unused accounts in a social Network
 ===========================================
 
-This tutorial works on a simple generated social network, in which we try to find accounts used much less than other ones
+This tutorial works on a simple generated social network, in which we try to find accounts used much less than other ones. If you dont like generated data, take a look at the alternative in the feynman diagram tutorial. It is very similar, but uses actual data. After reading it, you should have a basic understanding on how to create a graph autoencoder using grapa and why oneoff networks can improve on an autoencoder anomaly detection.
 This it written in google colab, and you can find it here https://colab.research.google.com/drive/1t7is62gnfga_tzI79wiLTVdbgOt87zwU?usp=sharing
 
 
